@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gulp - dashdev-website</title>
+<meta name="description" content="Do you need Gulp? Can it be integrated with Metalsmith?" />
+
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" media="all" href="../../css/styles.css" />
+</head>
+<body>
+
+<header>
+
+	<div class="content">
+
+		<p class="logo"><a href="../../">dashdev-website</a></p>
+		<!-- main navigation -->
+		<nav class="nav main">
+			<ul>
+				<li>
+					<a href="../../">Home</a>
+				</li>
+				<li>
+					<a href="../../start/">Start</a>
+				</li>
+				<li>
+					<a href="../../article/" class="active">Articles</a>
+				</li>
+				<li>
+					<a href="../../contact/">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="subpages">
+
+	<div class="content">
+
+		<article>
+
+			<h1>Gulp</h1>
+
+
+				<p class="articleinfo">Published ,  words, -minute read</p>
+
+
+			<p>Metalsmith has plugins for <a href="https://github.com/stevenschobert/metalsmith-sass">CSS pre-processing with Sass</a>, <a href="https://github.com/ahmadnassri/metalsmith-imagemin">image minification</a>, <a href="https://github.com/aymericbeaumet/metalsmith-concat">file concatenation</a>, <a href="https://github.com/ksmithut/metalsmith-uglify">uglification</a> and more. The build code will be familiar to anyone with <a href="http://gulpjs.com/">Gulp</a> experience.</p>
+<h2 id="do-you-still-need-gulp">Do you still need Gulp?</h2>
+<p>Metalsmith is often enough for simpler workflows. However, Gulp has a more extensive range of plugins and permits complex build activities such as linting and <a href="http://postcss.org/">PostCSS</a> processing with <a href="https://github.com/postcss/autoprefixer">auto-prefixer</a>.</p>
+<p>Metalsmith can be used within any Gulp task, e.g.</p>
+<pre><code>var
+    gulp       = require(&#39;gulp&#39;),
+    metalsmith = require(&#39;metalsmith&#39;),
+    publish    = require(&#39;metalsmith-publish&#39;),
+    markdown   = require(&#39;metalsmith-markdown&#39;);
+
+// build HTML files using Metalsmith
+gulp.task(&#39;html&#39;, function() {
+
+    var ms = metalsmith(dir.base)
+        .clean(false)
+        .source(&#39;src/html/&#39;)
+        .destination(&#39;build&#39;)
+        .use(publish())
+        .use(markdown())
+        .build(function(err) {
+            if (err) throw err;
+        });
+
+});</code></pre><p>Further Gulp tasks can then be added. Note <code>.clean(false)</code> ensures Metalsmith never wipes the build folder when other tasks are active.</p>
+<p>There are a number of Gulp/Metalsmith integration plugins although they are rarely necessary.</p>
+
+
+
+				<nav class="nav page">
+					<ul>
+
+						<li><a href="../../article/" class="back">&laquo; back: Articles</a></li></p>
+
+						<li><a href="../../article/future/" class="next">next: Future publication &raquo;</a></li></p>
+
+					</ul>
+				</nav>
+
+
+			</article>
+
+		
+			<!-- sub navigation -->
+			<nav class="nav sub">
+				<ul>
+		
+					<li>
+						<a href="../../article/usage/">Usage options</a>
+					</li>
+					<li>
+						<a href="../../article/gotchas/">Gotchas</a>
+					</li>
+					<li>
+						<strong>Gulp</strong>
+					</li>
+					<li>
+						<a href="../../article/future/">Future publication</a>
+					</li>
+					<li>
+						<a href="../../article/draft/">Draft article</a>
+					</li>
+		
+				</ul>
+			</nav>
+		
+
+		</div>
+
+</main>
+
+<footer>
+
+	<p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p>
+
+	<p class="siteinfo">Development build, version 1.0.0, article template</p>
+
+</footer>
+
+</body>
+</html>
