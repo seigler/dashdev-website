@@ -20,7 +20,7 @@ siteMeta = {
   desc: 'dashdevs-suite metalsmith website',
   author: 'dashdevs',
   contact: 'https://chat.dashdevs.org',
-  domain: devBuild ? 'http://127.0.0.1' : 'https://rawgit.com', // set domain
+  domain: devBuild ? 'http://127.0.0.1' : 'https://dashdev-suite.github.io', // set domain
   rootpath: devBuild ? null : '/dashdev-website/build/' // set absolute path (null for relative)
   // root: devBuild ? null : '/build' // TODO: not working?, but also not needed
 };
@@ -40,11 +40,12 @@ var markdown = require('metalsmith-markdown');
 var markdownPrecompiler = require('metalsmith-markdown-precompiler');
 var collections = require('metalsmith-collections');
 var permalinks = require('metalsmith-permalinks');
-var inplace = require('metalsmith-in-place');
+var publish = require('metalsmith-publish');
 var layouts = require('metalsmith-layouts');
 var discoverPartials = require('metalsmith-discover-partials');
 var paths = require('metalsmith-paths');
 var sitemap = require('metalsmith-sitemap');
+var rssfeed = require('metalsmith-feed');
 var assets = require('metalsmith-assets');
 var wordcount = require("metalsmith-word-count");
 
@@ -66,6 +67,7 @@ var metalsmith = Metalsmith(__dirname)
   .source(dir.source + 'html/')   // source folder (src/)
   .destination(dir.dest)    // build folder (build/)
   .metadata(siteMeta) // add meta data to every page
+  .use(publish()) // draft, private, future-dated
   .use(discoverPartials({   // needed for markdownPrecompiler
     directory: 'partials',
     pattern: /\.hbs$/       // original partials .html but exactly these parameters work 
@@ -149,7 +151,13 @@ if (browsersync) metalsmith.use(browsersync({ // start test server
 metalsmith
   .use(sitemap({ // generate sitemap.xml
     hostname: siteMeta.domain + (siteMeta.rootpath || ''),
-    omitIndex: true
+    omitIndex: true  // replace any paths ending in index.html with ''. Useful when you're using metalsmith-permalinks.
+  }))
+  .use(rssfeed({ // generate RSS feed for articles
+    collection: 'article',
+    site_url: siteMeta.domain + (siteMeta.rootpath || ''),
+    title: siteMeta.name,
+    description: siteMeta.desc
   }))
   .use(assets({ // copy assets: CSS, images etc.
     source: dir.source + 'assets/',
