@@ -4,7 +4,7 @@ description: A static HTML-only website generated using Metalsmith.io.
 priority: 1.0
 ---
 
-[![Node.js]({{ root }}/images/nodejs.png)](http://dash.org/)
+[![Node.js]({{ root }}images/nodejs.png)](http://dash.org/)
 
 This is a static website generated using the Node.js-powered **[Metalsmith](http://metalsmith.io)** and various published and custom plugins.
 

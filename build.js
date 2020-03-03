@@ -16,12 +16,13 @@ dir = {
 siteMeta = {
   devBuild: devBuild,
   version: pkg.version,
-  name: 'dashdev-website',
-  desc: 'metalsmith website',
+  name: 'dashdevs-suite',
+  desc: 'dashdevs-suite metalsmith website',
   author: 'dashdevs',
   contact: 'https://chat.dashdevs.org',
   domain: devBuild ? 'http://127.0.0.1' : 'https://rawgit.com', // set domain
   rootpath: devBuild ? null : '/dashdev-website/build/' // set absolute path (null for relative)
+  // root: devBuild ? null : '/build' // TODO: not working?, but also not needed
 };
 
 templateConfig = {
