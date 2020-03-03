@@ -34,7 +34,7 @@ templateConfig = {
 // metalsmith
 var Metalsmith = require('metalsmith');
 
-// modules
+// plugins
 var markdown = require('metalsmith-markdown');
 var markdownPrecompiler = require('metalsmith-markdown-precompiler');
 var collections = require('metalsmith-collections');
@@ -45,9 +45,16 @@ var discoverPartials = require('metalsmith-discover-partials');
 var paths = require('metalsmith-paths');
 var sitemap = require('metalsmith-sitemap');
 var assets = require('metalsmith-assets');
+var wordcount = require("metalsmith-word-count");
+
+// plugins dependend on devbuild- or production-build
+var htmlmin = devBuild ? null : require('metalsmith-html-minifier');
 var browsersync = devBuild ? require('metalsmith-browser-sync') : null;
 
-moremeta = require(dir.lib + 'metalsmith-moremeta');
+// custom plugins
+var setdate = require(dir.lib + 'metalsmith-setdate');
+var moremeta = require(dir.lib + 'metalsmith-moremeta');
+var debug = consoleLog ? require(dir.lib + 'metalsmith-debug') : null;
 
 console.log((devBuild ? 'Development' : 'Production'), 'build, version', pkg.version);
 
@@ -59,13 +66,14 @@ var metalsmith = Metalsmith(__dirname)
   .destination(dir.dest)    // build folder (build/)
   .metadata(siteMeta) // add meta data to every page
   .use(discoverPartials({   // needed for markdownPrecompiler
-    directory: 'partials',  
+    directory: 'partials',
     pattern: /\.hbs$/       // original partials .html but exactly these parameters work 
   }))
   // .use(json_to_files({
   //   source_path: './box/'
   // }))
   .use(paths())
+  .use(setdate()) // set date on every page if not set in front-matter
   .use(collections({ // determine page collection/taxonomy
     page: {
       pattern: '**/index.*',
@@ -104,6 +112,9 @@ var metalsmith = Metalsmith(__dirname)
   .use(permalinks({ // generate permalinks
     pattern: ':mainCollection/:title'
   }))
+  .use(wordcount({  // word count
+    raw: true
+  })) 
   .use(moremeta()) // determine root paths and navigation, TODO check remove
   // .use(inplace({
   //   //engineOptions:  {},
@@ -114,19 +125,20 @@ var metalsmith = Metalsmith(__dirname)
     pattern: `**/index.*`,
     default: 'page.hbs'
   }))
-  // .use(layouts({
-  //   //engineOptions:  {},
-  //   pattern: `start/**`,
-  //   default: 'article.hbs'
-  // }))
-  // .use(layouts({
-  //   //engineOptions:  {},
-  //   pattern: `article/**`,
-  //   default: 'article.hbs'
-  // }))
-  
+// .use(layouts({
+//   //engineOptions:  {},
+//   pattern: `start/**`,
+//   default: 'article.hbs'
+// }))
+// .use(layouts({
+//   //engineOptions:  {},
+//   pattern: `article/**`,
+//   default: 'article.hbs'
+// }))
 
-// if (debug) metalsmith.use(debug()); // output page debugging information
+if (htmlmin) metalsmith.use(htmlmin()); // minify production HTML
+
+if (debug) metalsmith.use(debug()); // output page debugging information
 
 if (browsersync) metalsmith.use(browsersync({ // start test server
   server: dir.dest,

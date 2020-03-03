@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./build.js",
     "production": "NODE_ENV=production node ./build.js",
+    "production-win": "set NODE_ENV=production & node ./build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
