@@ -35,6 +35,12 @@ To build the site for production and compress HTML files:
 npm run production
 ```
 
+on windows command line (not powershell, not vscode terminal):
+
+```bash
+npm run production-win
+```
+
 The site is built in the `/build` folder.
 
 ## Further information

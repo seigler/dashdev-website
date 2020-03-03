@@ -21,7 +21,7 @@ siteMeta = {
   author: 'dashdevs',
   contact: 'https://chat.dashdevs.org',
   domain: devBuild ? 'http://127.0.0.1' : 'https://rawgit.com', // set domain
-  rootpath: devBuild ? null : '/dashdev-suite/dashdev-website/master/build/' // set absolute path (null for relative)
+  rootpath: devBuild ? null : '/dashdev-website/build/' // set absolute path (null for relative)
 };
 
 templateConfig = {
