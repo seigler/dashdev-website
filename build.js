@@ -22,7 +22,6 @@ siteMeta = {
   contact: 'https://chat.dashdevs.org',
   domain: devBuild ? 'http://127.0.0.1' : 'https://dashdev-suite.github.io', // set domain
   rootpath: devBuild ? null : '/dashdev-website/build/' // set absolute path (null for relative)
-  // root: devBuild ? null : '/build' // TODO: not working?, but also not needed
 };
 
 templateConfig = {
@@ -109,7 +108,6 @@ var metalsmith = Metalsmith(__dirname)
     pattern: /\.md$/, // regex; no idea why .md works, check discoverPartials above
     partialsPath: './../partials',
     partials: ['navmain', 'navsub', 'footer', 'header', 'meta', 'pagelist']
-    // partials: ['partial']
   }))
   .use(markdown()) // convert markdown
   .use(permalinks({ // generate permalinks
@@ -128,11 +126,6 @@ var metalsmith = Metalsmith(__dirname)
     pattern: `**/index.*`,
     default: 'page.hbs'
   }))
-// .use(layouts({
-//   //engineOptions:  {},
-//   pattern: `start/**`,
-//   default: 'article.hbs'
-// }))
 // .use(layouts({
 //   //engineOptions:  {},
 //   pattern: `article/**`,
