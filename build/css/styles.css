@@ -12,7 +12,7 @@ body {
     font-family: georgia, cambria, "times new roman", times, serif;
     font-size: 1em;
     color: #555;
-    background-color: #eee;
+    background-color: #FBF7EB;
     line-height: 1.5;
 }
 
@@ -152,6 +152,7 @@ p.articleinfo {
     /* Distance left, right 4em */
     padding: 0em 4em;
     margin: 0 0 0 0;
+    background-color: #FBF7EB;
 }
 
 main {
@@ -173,9 +174,10 @@ header {
     /* header global */
     clear: both;
     width: 100%;
-    height: 70px;
+    /* eg can overwrite value for "if desktop" below */
+    height: 55px;
     overflow: auto;
-    background-color: rgb(56, 143, 61);
+    background-color: #1f2833
 }
 
 footer {
@@ -184,8 +186,8 @@ footer {
     width: 100%;
     height: 70px;
     overflow: auto;
-    background-color: rgb(214, 4, 4);
-    position: fixed;
+    background-color: #FBF7EB;
+    /* bottom: 0; */
     /* left: 310px; */
 }
 
@@ -257,8 +259,8 @@ footer p {
     header {
         /* header global */
         position: fixed;
-        /* CHECK added */
-        height: 55px;
+        /* defined global above */
+        /* height: 55px; */
         top: 0;
     }
     .logo {
@@ -274,9 +276,9 @@ footer p {
         width: 6em;
     }
     main {
-        /* CHECK same padding options for both templates here!? */
+        /* main global */
         /* position: fixed; */
-        /* margin: 55px 0px 0px 310px; */
+        /* margin: 0px 0px 0px 0px; */
         /* padding: 3em 0em 2em 0em; */
         /* overflow: auto; */
     }
@@ -288,7 +290,7 @@ footer p {
     .subpages article {
         /* article template */
         /* flex: 1 1 70%; */
-        /* min-width for text content */
+        /* min-width for text content, eg "next: xxx" */
         min-width: 100%;
     }
     .subpages .nav.sub {
@@ -299,7 +301,7 @@ footer p {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgb(88, 9, 112);
+        background-color: #1f2833;
         overflow-x: hidden;
         overflow-y: scroll;
         padding-top: 20px;
