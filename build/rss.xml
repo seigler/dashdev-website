@@ -1,4 +1,460 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dashdevs-suite]]></title><description><![CDATA[dashdevs-suite metalsmith website]]></description><link>https://dashdev-suite.github.io/dashdev-website/build/</link><generator>metalsmith-feed</generator><lastBuildDate>Tue, 03 Mar 2020 12:58:06 GMT</lastBuildDate><atom:link href="https://dashdev-suite.github.io/dashdev-website/build/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Articles]]></title><description><![CDATA[<!DOCTYPE html><html><head><meta charset=utf-8><title>Articles - dashdevs-suite</title><meta name=description content="A set of articles published on this site."><meta name=HandheldFriendly content=true><meta name=MobileOptimized content=320><meta name=viewport content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=mobile-web-app-capable content=yes><link rel=stylesheet media=all href=/dashdev-website/build/css/styles.css></head><body><header><div class=content><p class=logo><a href=/dashdev-website/build/ >dashdevs-suite</a></p><nav class="nav main"><ul><li><a href=/dashdev-website/build/ >Home</a></li><li><a href=/dashdev-website/build/start/ >Start</a></li><li><a href=/dashdev-website/build/article/ class=active>Articles</a></li><li><a href=/dashdev-website/build/contact/ >Contact</a></li></ul></nav></div></header><main class=subpages><div class=content><article><h1>Articles</h1><p>A selection of articles is available in this section.</p><ul class=pagelist><li><a href=/dashdev-website/build/article/usage/ ><h2>Usage options</h2><p class=articleinfo>14 March 2016</p><p>What type of project could benefit from Metalsmith?</p></a></li><li><a href=/dashdev-website/build/article/gotchas/ ><h2>Gotchas</h2><p class=articleinfo>10 March 2016</p><p>Issues and workarounds when using Metalsmith.</p></a></li><li><a href=/dashdev-website/build/article/gulp/ ><h2>Gulp</h2><p class=articleinfo>2 March 2016</p><p>Do you need Gulp? Can it be integrated with Metalsmith?</p></a></li><li><a href=/dashdev-website/build/article/future/ ><h2>Future publication</h2><p class=articleinfo>1 March 2016</p><p>This article will be published after 1 March, 2016.</p></a></li></ul></article><nav class="nav sub"><ul><li><a href=/dashdev-website/build/article/usage/ >Usage options</a></li><li><a href=/dashdev-website/build/article/gotchas/ >Gotchas</a></li><li><a href=/dashdev-website/build/article/gulp/ >Gulp</a></li><li><a href=/dashdev-website/build/article/future/ >Future publication</a></li></ul></nav></div></main><footer><p>By <a href=https://chat.dashdevs.org>dashdevs</a> and featured on <a href=http://www.dashdevs.org/ >DashDevs.org</a></p><p class=siteinfo>Production build, version 1.0.0, article template</p></footer></body></html>]]></description><link>https://dashdev-suite.github.io/dashdev-website/build/article</link><guid isPermaLink="true">https://dashdev-suite.github.io/dashdev-website/build/article</guid><pubDate>Wed, 26 Feb 2020 15:41:33 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html><html><head><meta charset=utf-8><title>Usage options - dashdevs-suite</title><meta name=description content="What type of project could benefit from Metalsmith?"><meta name=HandheldFriendly content=true><meta name=MobileOptimized content=320><meta name=viewport content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=mobile-web-app-capable content=yes><link rel=stylesheet media=all href=/dashdev-website/build/css/styles.css></head><body><header><div class=content><p class=logo><a href=/dashdev-website/build/ >dashdevs-suite</a></p><nav class="nav main"><ul><li><a href=/dashdev-website/build/ >Home</a></li><li><a href=/dashdev-website/build/start/ >Start</a></li><li><a href=/dashdev-website/build/article/ class=active>Articles</a></li><li><a href=/dashdev-website/build/contact/ >Contact</a></li></ul></nav></div></header><main class=subpages><div class=content><article><h1>Usage options</h1><p class=articleinfo>Published 14 March 2016, 47 words, 1-minute read</p><p>Metalsmith could be used to create any number of resources, including:</p><ul><li>a fast static website with minimal server-side requirements</li><li>technical documentation</li><li>an eBook</li><li>application prototypes</li><li>build tools or project scaffolding</li></ul><p>The markdown files can be converted to other files types using plugins such as <a href=https://github.com/arve0/metalsmith-pandoc>metalsmith-pandoc</a> or <a href=https://github.com/jjclark1982/metalsmith-pdf>metalsmith-pdf</a>.</p><nav class="nav page"><ul><li><a href=/dashdev-website/build/article/ class=back>&laquo; back: Articles</a></li><p></p><li><a href=/dashdev-website/build/article/gotchas/ class=next>next: Gotchas &raquo;</a></li><p></p></ul></nav></article><nav class="nav sub"><ul><li><strong>Usage options</strong></li><li><a href=/dashdev-website/build/article/gotchas/ >Gotchas</a></li><li><a href=/dashdev-website/build/article/gulp/ >Gulp</a></li><li><a href=/dashdev-website/build/article/future/ >Future publication</a></li></ul></nav></div></main><footer><p>By <a href=https://chat.dashdevs.org>dashdevs</a> and featured on <a href=http://www.dashdevs.org/ >DashDevs.org</a></p><p class=siteinfo>Production build, version 1.0.0, article template</p></footer></body></html>]]></description><link>https://dashdev-suite.github.io/dashdev-website/build/article/usage</link><guid isPermaLink="true">https://dashdev-suite.github.io/dashdev-website/build/article/usage</guid><pubDate>Mon, 14 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gotchas]]></title><description><![CDATA[<!DOCTYPE html><html><head><meta charset=utf-8><title>Gotchas - dashdevs-suite</title><meta name=description content="Issues and workarounds when using Metalsmith."><meta name=HandheldFriendly content=true><meta name=MobileOptimized content=320><meta name=viewport content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=mobile-web-app-capable content=yes><link rel=stylesheet media=all href=/dashdev-website/build/css/styles.css></head><body><header><div class=content><p class=logo><a href=/dashdev-website/build/ >dashdevs-suite</a></p><nav class="nav main"><ul><li><a href=/dashdev-website/build/ >Home</a></li><li><a href=/dashdev-website/build/start/ >Start</a></li><li><a href=/dashdev-website/build/article/ class=active>Articles</a></li><li><a href=/dashdev-website/build/contact/ >Contact</a></li></ul></nav></div></header><main class=subpages><div class=content><article><h1>Gotchas</h1><p class=articleinfo>Published 10 March 2016, 127 words, 1-minute read</p><p>Not everything is necessarily straight-forward in the Metalsmith world&hellip;</p><h2 id=incompatible-plugins>Incompatible plugins</h2><p>Some plugins clash with another. For example, <a href=https://github.com/radiovisual/metalsmith-rootpath>metalsmith-rootpath</a> which calculates relative roots does not play nicely with <a href=https://github.com/segmentio/metalsmith-permalinks>metalsmith-permalinks</a> which creates custom folder structures.</p><p><em>Note: <code>lib/metalsmith-moremeta</code> in this project sets a correct <code>root</code> variable whether permalinks are used or not.</em></p><h2 id=plugin-order-can-be-critical>Plugin order can be critical</h2><p>One plugins may depend on another or conflict if placed the wrong way around. For example, the RSS-generating <a href=https://github.com/hurrymaplelad/metalsmith-feed>metalsmith-feed</a> plugin must be called after <a href=https://github.com/superwolff/metalsmith-layouts>metalsmith-layouts</a> to ensure <code>rss.xml</code> is not generated within a page template.</p><h2 id=browsersync-build-issues>Browsersync build issues</h2><p>When <a href=https://www.browsersync.io/ >Browsersync</a> is running and files are edited, collections are re-parsed but the old data remains. This can cause menus and next/back links to be incorrect. To fix this, stop and restart the build.</p><nav class="nav page"><ul><li><a href=/dashdev-website/build/article/usage/ class=back>&laquo; back: Usage options</a></li><p></p><li><a href=/dashdev-website/build/article/gulp/ class=next>next: Gulp &raquo;</a></li><p></p></ul></nav></article><nav class="nav sub"><ul><li><a href=/dashdev-website/build/article/usage/ >Usage options</a></li><li><strong>Gotchas</strong></li><li><a href=/dashdev-website/build/article/gulp/ >Gulp</a></li><li><a href=/dashdev-website/build/article/future/ >Future publication</a></li></ul></nav></div></main><footer><p>By <a href=https://chat.dashdevs.org>dashdevs</a> and featured on <a href=http://www.dashdevs.org/ >DashDevs.org</a></p><p class=siteinfo>Production build, version 1.0.0, article template</p></footer></body></html>]]></description><link>https://dashdev-suite.github.io/dashdev-website/build/article/gotchas</link><guid isPermaLink="true">https://dashdev-suite.github.io/dashdev-website/build/article/gotchas</guid><pubDate>Thu, 10 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gulp]]></title><description><![CDATA[<!DOCTYPE html><html><head><meta charset=utf-8><title>Gulp - dashdevs-suite</title><meta name=description content="Do you need Gulp? Can it be integrated with Metalsmith?"><meta name=HandheldFriendly content=true><meta name=MobileOptimized content=320><meta name=viewport content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=mobile-web-app-capable content=yes><link rel=stylesheet media=all href=/dashdev-website/build/css/styles.css></head><body><header><div class=content><p class=logo><a href=/dashdev-website/build/ >dashdevs-suite</a></p><nav class="nav main"><ul><li><a href=/dashdev-website/build/ >Home</a></li><li><a href=/dashdev-website/build/start/ >Start</a></li><li><a href=/dashdev-website/build/article/ class=active>Articles</a></li><li><a href=/dashdev-website/build/contact/ >Contact</a></li></ul></nav></div></header><main class=subpages><div class=content><article><h1>Gulp</h1><p class=articleinfo>Published 2 March 2016, 141 words, 1-minute read</p><p>Metalsmith has plugins for <a href=https://github.com/stevenschobert/metalsmith-sass>CSS pre-processing with Sass</a>, <a href=https://github.com/ahmadnassri/metalsmith-imagemin>image minification</a>, <a href=https://github.com/aymericbeaumet/metalsmith-concat>file concatenation</a>, <a href=https://github.com/ksmithut/metalsmith-uglify>uglification</a> and more. The build code will be familiar to anyone with <a href=http://gulpjs.com/ >Gulp</a> experience.</p><h2 id=do-you-still-need-gulp>Do you still need Gulp?</h2><p>Metalsmith is often enough for simpler workflows. However, Gulp has a more extensive range of plugins and permits complex build activities such as linting and <a href=http://postcss.org/ >PostCSS</a> processing with <a href=https://github.com/postcss/autoprefixer>auto-prefixer</a>.</p><p>Metalsmith can be used within any Gulp task, e.g.</p><pre><code>var
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dashdevs-suite]]></title><description><![CDATA[dashdevs-suite metalsmith website]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Wed, 04 Mar 2020 13:15:23 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Articles]]></title><description><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Articles - dashdevs-suite</title>
+<meta name="description" content="A set of articles published on this site." />
+
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" media="all" href="../css/styles.css" />
+</head>
+<body>
+
+<header>
+
+	<div class="content">
+
+		<p class="logo"><a href="../">dashdevs-suite</a></p>
+		<!-- main navigation -->
+		<nav class="nav main">
+			<ul>
+				<li>
+					<a href="../">Home</a>
+				</li>
+				<li>
+					<a href="../start/">Start</a>
+				</li>
+				<li>
+					<a href="../article/" class="active">Articles</a>
+				</li>
+				<li>
+					<a href="../contact/">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="subpages">
+
+	
+		<!-- sub navigation -->
+		<nav class="nav sub">
+			<ul>
+	
+				<li>
+					<a href="../article/usage/">Usage options</a>
+				</li>
+				<li>
+					<a href="../article/gotchas/">Gotchas</a>
+				</li>
+				<li>
+					<a href="../article/gulp/">Gulp</a>
+				</li>
+				<li>
+					<a href="../article/future/">Future publication</a>
+				</li>
+	
+			</ul>
+		</nav>
+	
+
+	<div class="content">
+
+		<article>
+
+			<h1>Articles</h1>
+
+
+			<p>A selection of articles is available in this section.</p>
+
+
+
+					<ul class="pagelist">
+				
+						<li>
+							<a href="../article/usage/">
+				
+								<h2>Usage options</h2>
+								<p class="articleinfo">14 March 2016</p>
+				
+									<p>What type of project could benefit from Metalsmith?</p>
+							</a>
+						</li>
+						<li>
+							<a href="../article/gotchas/">
+				
+								<h2>Gotchas</h2>
+								<p class="articleinfo">10 March 2016</p>
+				
+									<p>Issues and workarounds when using Metalsmith.</p>
+							</a>
+						</li>
+						<li>
+							<a href="../article/gulp/">
+				
+								<h2>Gulp</h2>
+								<p class="articleinfo">2 March 2016</p>
+				
+									<p>Do you need Gulp? Can it be integrated with Metalsmith?</p>
+							</a>
+						</li>
+						<li>
+							<a href="../article/future/">
+				
+								<h2>Future publication</h2>
+								<p class="articleinfo">1 March 2016</p>
+				
+									<p>This article will be published after 1 March, 2016.</p>
+							</a>
+						</li>
+				
+					</ul>
+
+
+			</article>
+
+		</div>
+
+</main>
+
+<footer>
+
+	<p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p>
+
+	<p class="siteinfo">Development build, version 1.0.0, article template</p>
+
+</footer>
+
+</body>
+</html>
+]]></description><link>http://127.0.0.1/article</link><guid isPermaLink="true">http://127.0.0.1/article</guid><pubDate>Wed, 26 Feb 2020 15:41:33 GMT</pubDate></item><item><title><![CDATA[Usage options]]></title><description><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Usage options - dashdevs-suite</title>
+<meta name="description" content="What type of project could benefit from Metalsmith?" />
+
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" media="all" href="../../css/styles.css" />
+</head>
+<body>
+
+<header>
+
+	<div class="content">
+
+		<p class="logo"><a href="../../">dashdevs-suite</a></p>
+		<!-- main navigation -->
+		<nav class="nav main">
+			<ul>
+				<li>
+					<a href="../../">Home</a>
+				</li>
+				<li>
+					<a href="../../start/">Start</a>
+				</li>
+				<li>
+					<a href="../../article/" class="active">Articles</a>
+				</li>
+				<li>
+					<a href="../../contact/">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="subpages">
+
+	
+		<!-- sub navigation -->
+		<nav class="nav sub">
+			<ul>
+	
+				<li>
+					<strong>Usage options</strong>
+				</li>
+				<li>
+					<a href="../../article/gotchas/">Gotchas</a>
+				</li>
+				<li>
+					<a href="../../article/gulp/">Gulp</a>
+				</li>
+				<li>
+					<a href="../../article/future/">Future publication</a>
+				</li>
+	
+			</ul>
+		</nav>
+	
+
+	<div class="content">
+
+		<article>
+
+			<h1>Usage options</h1>
+
+
+				<p class="articleinfo">Published 14 March 2016, 47 words, 1-minute read</p>
+
+
+			<p>Metalsmith could be used to create any number of resources, including:</p>
+<ul>
+<li>a fast static website with minimal server-side requirements</li>
+<li>technical documentation</li>
+<li>an eBook</li>
+<li>application prototypes</li>
+<li>build tools or project scaffolding</li>
+</ul>
+<p>The markdown files can be converted to other files types using plugins such as <a href="https://github.com/arve0/metalsmith-pandoc">metalsmith-pandoc</a> or <a href="https://github.com/jjclark1982/metalsmith-pdf">metalsmith-pdf</a>.</p>
+
+
+
+				<nav class="nav page">
+					<ul>
+
+						<li><a href="../../article/" class="back">&laquo; back: Articles</a></li></p>
+
+						<li><a href="../../article/gotchas/" class="next">next: Gotchas &raquo;</a></li></p>
+
+					</ul>
+				</nav>
+
+
+			</article>
+
+		</div>
+
+</main>
+
+<footer>
+
+	<p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p>
+
+	<p class="siteinfo">Development build, version 1.0.0, article template</p>
+
+</footer>
+
+</body>
+</html>
+]]></description><link>http://127.0.0.1/article/usage</link><guid isPermaLink="true">http://127.0.0.1/article/usage</guid><pubDate>Mon, 14 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gotchas]]></title><description><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gotchas - dashdevs-suite</title>
+<meta name="description" content="Issues and workarounds when using Metalsmith." />
+
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" media="all" href="../../css/styles.css" />
+</head>
+<body>
+
+<header>
+
+	<div class="content">
+
+		<p class="logo"><a href="../../">dashdevs-suite</a></p>
+		<!-- main navigation -->
+		<nav class="nav main">
+			<ul>
+				<li>
+					<a href="../../">Home</a>
+				</li>
+				<li>
+					<a href="../../start/">Start</a>
+				</li>
+				<li>
+					<a href="../../article/" class="active">Articles</a>
+				</li>
+				<li>
+					<a href="../../contact/">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="subpages">
+
+	
+		<!-- sub navigation -->
+		<nav class="nav sub">
+			<ul>
+	
+				<li>
+					<a href="../../article/usage/">Usage options</a>
+				</li>
+				<li>
+					<strong>Gotchas</strong>
+				</li>
+				<li>
+					<a href="../../article/gulp/">Gulp</a>
+				</li>
+				<li>
+					<a href="../../article/future/">Future publication</a>
+				</li>
+	
+			</ul>
+		</nav>
+	
+
+	<div class="content">
+
+		<article>
+
+			<h1>Gotchas</h1>
+
+
+				<p class="articleinfo">Published 10 March 2016, 127 words, 1-minute read</p>
+
+
+			<p>Not everything is necessarily straight-forward in the Metalsmith world&hellip;</p>
+<h2 id="incompatible-plugins">Incompatible plugins</h2>
+<p>Some plugins clash with another. For example,  <a href="https://github.com/radiovisual/metalsmith-rootpath">metalsmith-rootpath</a> which calculates relative roots does not play nicely with <a href="https://github.com/segmentio/metalsmith-permalinks">metalsmith-permalinks</a> which creates custom folder structures.</p>
+<p><em>Note: <code>lib/metalsmith-moremeta</code> in this project sets a correct <code>root</code> variable whether permalinks are used or not.</em></p>
+<h2 id="plugin-order-can-be-critical">Plugin order can be critical</h2>
+<p>One plugins may depend on another or conflict if placed the wrong way around. For example, the RSS-generating <a href="https://github.com/hurrymaplelad/metalsmith-feed">metalsmith-feed</a> plugin must be called after <a href="https://github.com/superwolff/metalsmith-layouts">metalsmith-layouts</a> to ensure <code>rss.xml</code> is not generated within a page template.</p>
+<h2 id="browsersync-build-issues">Browsersync build issues</h2>
+<p>When <a href="https://www.browsersync.io/">Browsersync</a> is running and files are edited, collections are re-parsed but the old data remains. This can cause menus and next/back links to be incorrect. To fix this, stop and restart the build.</p>
+
+
+
+				<nav class="nav page">
+					<ul>
+
+						<li><a href="../../article/usage/" class="back">&laquo; back: Usage options</a></li></p>
+
+						<li><a href="../../article/gulp/" class="next">next: Gulp &raquo;</a></li></p>
+
+					</ul>
+				</nav>
+
+
+			</article>
+
+		</div>
+
+</main>
+
+<footer>
+
+	<p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p>
+
+	<p class="siteinfo">Development build, version 1.0.0, article template</p>
+
+</footer>
+
+</body>
+</html>
+]]></description><link>http://127.0.0.1/article/gotchas</link><guid isPermaLink="true">http://127.0.0.1/article/gotchas</guid><pubDate>Thu, 10 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Gulp]]></title><description><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gulp - dashdevs-suite</title>
+<meta name="description" content="Do you need Gulp? Can it be integrated with Metalsmith?" />
+
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" media="all" href="../../css/styles.css" />
+</head>
+<body>
+
+<header>
+
+	<div class="content">
+
+		<p class="logo"><a href="../../">dashdevs-suite</a></p>
+		<!-- main navigation -->
+		<nav class="nav main">
+			<ul>
+				<li>
+					<a href="../../">Home</a>
+				</li>
+				<li>
+					<a href="../../start/">Start</a>
+				</li>
+				<li>
+					<a href="../../article/" class="active">Articles</a>
+				</li>
+				<li>
+					<a href="../../contact/">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="subpages">
+
+	
+		<!-- sub navigation -->
+		<nav class="nav sub">
+			<ul>
+	
+				<li>
+					<a href="../../article/usage/">Usage options</a>
+				</li>
+				<li>
+					<a href="../../article/gotchas/">Gotchas</a>
+				</li>
+				<li>
+					<strong>Gulp</strong>
+				</li>
+				<li>
+					<a href="../../article/future/">Future publication</a>
+				</li>
+	
+			</ul>
+		</nav>
+	
+
+	<div class="content">
+
+		<article>
+
+			<h1>Gulp</h1>
+
+
+				<p class="articleinfo">Published 2 March 2016, 141 words, 1-minute read</p>
+
+
+			<p>Metalsmith has plugins for <a href="https://github.com/stevenschobert/metalsmith-sass">CSS pre-processing with Sass</a>, <a href="https://github.com/ahmadnassri/metalsmith-imagemin">image minification</a>, <a href="https://github.com/aymericbeaumet/metalsmith-concat">file concatenation</a>, <a href="https://github.com/ksmithut/metalsmith-uglify">uglification</a> and more. The build code will be familiar to anyone with <a href="http://gulpjs.com/">Gulp</a> experience.</p>
+<h2 id="do-you-still-need-gulp">Do you still need Gulp?</h2>
+<p>Metalsmith is often enough for simpler workflows. However, Gulp has a more extensive range of plugins and permits complex build activities such as linting and <a href="http://postcss.org/">PostCSS</a> processing with <a href="https://github.com/postcss/autoprefixer">auto-prefixer</a>.</p>
+<p>Metalsmith can be used within any Gulp task, e.g.</p>
+<pre><code>var
     gulp       = require(&#39;gulp&#39;),
     metalsmith = require(&#39;metalsmith&#39;),
     publish    = require(&#39;metalsmith-publish&#39;),
@@ -17,4 +473,145 @@ gulp.task(&#39;html&#39;, function() {
             if (err) throw err;
         });
 
-});</code></pre><p>Further Gulp tasks can then be added. Note <code>.clean(false)</code> ensures Metalsmith never wipes the build folder when other tasks are active.</p><p>There are a number of Gulp/Metalsmith integration plugins although they are rarely necessary.</p><nav class="nav page"><ul><li><a href=/dashdev-website/build/article/gotchas/ class=back>&laquo; back: Gotchas</a></li><p></p><li><a href=/dashdev-website/build/article/future/ class=next>next: Future publication &raquo;</a></li><p></p></ul></nav></article><nav class="nav sub"><ul><li><a href=/dashdev-website/build/article/usage/ >Usage options</a></li><li><a href=/dashdev-website/build/article/gotchas/ >Gotchas</a></li><li><strong>Gulp</strong></li><li><a href=/dashdev-website/build/article/future/ >Future publication</a></li></ul></nav></div></main><footer><p>By <a href=https://chat.dashdevs.org>dashdevs</a> and featured on <a href=http://www.dashdevs.org/ >DashDevs.org</a></p><p class=siteinfo>Production build, version 1.0.0, article template</p></footer></body></html>]]></description><link>https://dashdev-suite.github.io/dashdev-website/build/article/gulp</link><guid isPermaLink="true">https://dashdev-suite.github.io/dashdev-website/build/article/gulp</guid><pubDate>Wed, 02 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Future publication]]></title><description><![CDATA[<!DOCTYPE html><html><head><meta charset=utf-8><title>Future publication - dashdevs-suite</title><meta name=description content="This article will be published after 1 March, 2016."><meta name=HandheldFriendly content=true><meta name=MobileOptimized content=320><meta name=viewport content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=mobile-web-app-capable content=yes><link rel=stylesheet media=all href=/dashdev-website/build/css/styles.css></head><body><header><div class=content><p class=logo><a href=/dashdev-website/build/ >dashdevs-suite</a></p><nav class="nav main"><ul><li><a href=/dashdev-website/build/ >Home</a></li><li><a href=/dashdev-website/build/start/ >Start</a></li><li><a href=/dashdev-website/build/article/ class=active>Articles</a></li><li><a href=/dashdev-website/build/contact/ >Contact</a></li></ul></nav></div></header><main class=subpages><div class=content><article><h1>Future publication</h1><p class=articleinfo>Published 1 March 2016, 16 words, 1-minute read</p><p>This article will only appear if the site is built is run after 1 March, 2016.</p><nav class="nav page"><ul><li><a href=/dashdev-website/build/article/gulp/ class=back>&laquo; back: Gulp</a></li><p></p></ul></nav></article><nav class="nav sub"><ul><li><a href=/dashdev-website/build/article/usage/ >Usage options</a></li><li><a href=/dashdev-website/build/article/gotchas/ >Gotchas</a></li><li><a href=/dashdev-website/build/article/gulp/ >Gulp</a></li><li><strong>Future publication</strong></li></ul></nav></div></main><footer><p>By <a href=https://chat.dashdevs.org>dashdevs</a> and featured on <a href=http://www.dashdevs.org/ >DashDevs.org</a></p><p class=siteinfo>Production build, version 1.0.0, article template</p></footer></body></html>]]></description><link>https://dashdev-suite.github.io/dashdev-website/build/article/future</link><guid isPermaLink="true">https://dashdev-suite.github.io/dashdev-website/build/article/future</guid><pubDate>Tue, 01 Mar 2016 00:00:00 GMT</pubDate></item></channel></rss>
+});</code></pre><p>Further Gulp tasks can then be added. Note <code>.clean(false)</code> ensures Metalsmith never wipes the build folder when other tasks are active.</p>
+<p>There are a number of Gulp/Metalsmith integration plugins although they are rarely necessary.</p>
+
+
+
+				<nav class="nav page">
+					<ul>
+
+						<li><a href="../../article/gotchas/" class="back">&laquo; back: Gotchas</a></li></p>
+
+						<li><a href="../../article/future/" class="next">next: Future publication &raquo;</a></li></p>
+
+					</ul>
+				</nav>
+
+
+			</article>
+
+		</div>
+
+</main>
+
+<footer>
+
+	<p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p>
+
+	<p class="siteinfo">Development build, version 1.0.0, article template</p>
+
+</footer>
+
+</body>
+</html>
+]]></description><link>http://127.0.0.1/article/gulp</link><guid isPermaLink="true">http://127.0.0.1/article/gulp</guid><pubDate>Wed, 02 Mar 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Future publication]]></title><description><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Future publication - dashdevs-suite</title>
+<meta name="description" content="This article will be published after 1 March, 2016." />
+
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width,shrink-to-fit=no,user-scalable=no,initial-scale=1,minimum-scale=1,minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" media="all" href="../../css/styles.css" />
+</head>
+<body>
+
+<header>
+
+	<div class="content">
+
+		<p class="logo"><a href="../../">dashdevs-suite</a></p>
+		<!-- main navigation -->
+		<nav class="nav main">
+			<ul>
+				<li>
+					<a href="../../">Home</a>
+				</li>
+				<li>
+					<a href="../../start/">Start</a>
+				</li>
+				<li>
+					<a href="../../article/" class="active">Articles</a>
+				</li>
+				<li>
+					<a href="../../contact/">Contact</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+</header>
+
+<main class="subpages">
+
+	
+		<!-- sub navigation -->
+		<nav class="nav sub">
+			<ul>
+	
+				<li>
+					<a href="../../article/usage/">Usage options</a>
+				</li>
+				<li>
+					<a href="../../article/gotchas/">Gotchas</a>
+				</li>
+				<li>
+					<a href="../../article/gulp/">Gulp</a>
+				</li>
+				<li>
+					<strong>Future publication</strong>
+				</li>
+	
+			</ul>
+		</nav>
+	
+
+	<div class="content">
+
+		<article>
+
+			<h1>Future publication</h1>
+
+
+				<p class="articleinfo">Published 1 March 2016, 16 words, 1-minute read</p>
+
+
+			<p>This article will only appear if the site is built is run after 1 March, 2016.</p>
+
+
+
+				<nav class="nav page">
+					<ul>
+
+						<li><a href="../../article/gulp/" class="back">&laquo; back: Gulp</a></li></p>
+
+
+					</ul>
+				</nav>
+
+
+			</article>
+
+		</div>
+
+</main>
+
+<footer>
+
+	<p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p>
+
+	<p class="siteinfo">Development build, version 1.0.0, article template</p>
+
+</footer>
+
+</body>
+</html>
+]]></description><link>http://127.0.0.1/article/future</link><guid isPermaLink="true">http://127.0.0.1/article/future</guid><pubDate>Tue, 01 Mar 2016 00:00:00 GMT</pubDate></item></channel></rss>

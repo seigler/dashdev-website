@@ -89,7 +89,7 @@ var metalsmith = Metalsmith(__dirname)
       reverse: true,
       refer: true,
       metadata: {
-        layout: 'article.hbs'
+        layout: './../src/layouts/article.hbs'  // default is <root>/layouts
       }
     },
     article: {
@@ -99,7 +99,7 @@ var metalsmith = Metalsmith(__dirname)
       refer: true,
       limit: 50,
       metadata: {
-        layout: 'article.hbs'
+        layout: './../src/layouts/article.hbs'
       }
     }
   }))
@@ -124,7 +124,7 @@ var metalsmith = Metalsmith(__dirname)
   .use(layouts({
     //engineOptions:  {},
     pattern: `**/index.*`,
-    default: 'page.hbs'
+    default: './../src/layouts/page.hbs'
   }))
 // .use(layouts({
 //   //engineOptions:  {},

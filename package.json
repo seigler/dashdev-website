@@ -40,7 +40,5 @@
     "metalsmith-paths": "^3.0.1",
     "metalsmith-sitemap": "^1.2.2"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
