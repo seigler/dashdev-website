@@ -1,5 +1,17 @@
 /* basic page styles */
 
+
+/* dark blue: #1f2833; */
+
+
+/* light yellow: FBF7EB, new lighter: #f7f2ea */
+
+
+/* light grey: #c5c6c7*/
+
+
+/* neon green: #66FCF1 */
+
 *,
 *:before,
 *:after {
@@ -9,11 +21,24 @@
 }
 
 body {
-    font-family: georgia, cambria, "times new roman", times, serif;
-    font-size: 1em;
-    color: #555;
-    background-color: #FBF7EB;
+    /* font-family: georgia, cambria, "times new roman", times, serif; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05em;
+    /* only with position static text will auto-format when making window smaller */
+    /* position: relative; */
+    /* margin-top: 60px; */
+    /* margin-left: 310px; */
+    /* TODO: not sure this is clean solution */
+    /* set background-color for all parts default, specially below content  */
+    background-color: #f7f2ea;
+    /* color: #1f2833; */
     line-height: 1.5;
+    /* TODO: put footer at bottom 
+    https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+    /* min-height: 100%; */
+    /* TODO: repair, only scrolling in body possible */
+    overflow: auto;
+    /* padding-top: 30px; */
 }
 
 article,
@@ -33,12 +58,14 @@ summary {
 h1,
 h2,
 .logo {
-    font-family: arial, helvetica, free-sans, sans-serif;
+    /* font-family: arial, helvetica, free-sans, sans-serif; */
+    font-family: 'Oswald', sans-serif;
     font-weight: normal;
 }
 
 h1 {
     font-size: 1.6em;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -69,39 +96,52 @@ img {
 }
 
 pre {
-    font-size: 0.8rem;
+    /* font-size: 1.05em; */
+    font-weight: bold;
     padding: 0.2em 0.4em;
     margin: 1em 0 1.5em 3em;
-    background-color: #eff5ef;
+    background-color: #1f2833;
     border-radius: 3px;
     overflow: auto;
 }
 
 code {
+    font-size: 0.88em;
     font-family: Consolas, Menlo, "DejaVu Mono", monospace;
-    color: #363;
-    background-color: #eff5ef;
-    border-radius: 3px;
-    padding: 0 0.2em;
+    color: #E831C1;
+    background-color: #ddd7d4;
+    /* CHECK needed for bold, pre not enough!? */
+    font-weight: bold;
+    /* makes single code border round */
+    border-radius: 5px;
+    padding: 0 0.4em;
 }
 
 pre code {
     padding: 0;
+    color: #eff5ef;
+    background-color: #1f2833;
+    padding-left: 8px;
+    line-height: 2.5;
+    font-size: 0.82em;
+    /* TODO make border round */
+    /* border-radius: 5px; */
 }
 
 a:link,
 a:visited {
     text-decoration: none;
-    color: #66c;
+    color: #fff;
 }
 
 a:hover,
 a:active {
-    color: #c66;
+    color: #c5c6c7;
 }
 
 .pagelist {
     list-style-type: none;
+    /* TODO: check what flex does here */
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -120,12 +160,14 @@ a:active {
     border: 1px solid #ccc;
     outline: 0 none;
     overflow: hidden;
+    /* color for links in pagelist type page eg "Installation" (1 from 3) */
+    color: #1f2833;
 }
 
 .pagelist a:hover,
 .pagelist a:focus {
-    background-color: #f9f9f9;
-    border-color: #999;
+    background-color: #5a14dd;
+    border-color: rgb(238, 9, 150);
 }
 
 .pagelist h2,
@@ -134,40 +176,56 @@ a:active {
 }
 
 .pagelist p {
-    color: #333;
+    color: #1f2833;
 }
 
 p.articleinfo {
     font-size: 0.8em;
-    color: #777;
+    /* currently date */
+    color: #1f2833;
 }
 
 
 /* layout */
 
-.content {
-    /* for page and article template */
-    max-width: 100%;
-    max-height: 100%;
-    /* Distance left, right 4em */
-    padding: 0em 4em;
-    margin: 0 0 0 0;
-    background-color: #FBF7EB;
-}
-
 main {
     /* for page and article template */
     clear: both;
     background-color: #fff;
-    /* todo check not working here */
-    /* overflow: scroll; */
-    margin: 55px 0px 0 0px;
+    margin-top: 60px;
+    /* margin-bottom: 0; */
+    background-color: #f7f2ea;
+    /* min-height: 100%; */
+    /* min-width: 100%; */
+    overflow: auto;
+}
+
+.content {
+    /* this is the content of main navigation header */
+    /* CHECK min-width makes things too wide */
+    /* min-width: 100%; */
+    min-height: 100%;
+    overflow: auto;
+    /* move font a little down */
+    padding-top: 10px;
 }
 
 article {
     /* for page and article template */
-    /* Distance top 1rem for content */
-    padding: 1rem 0;
+    /* Distance left, right 4em */
+    padding: 0 4em;
+    /* Distance top 2em for content */
+    padding-top: 2em;
+}
+
+article a:link,
+article a:visited,
+article a:hover {
+    color: #2092bc;
+}
+
+article a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -175,7 +233,7 @@ header {
     clear: both;
     width: 100%;
     /* eg can overwrite value for "if desktop" below */
-    height: 55px;
+    height: 60px;
     overflow: auto;
     background-color: #1f2833
 }
@@ -183,12 +241,12 @@ header {
 footer {
     /* footer global */
     clear: both;
-    width: 100%;
+    /* width: 100%; */
+    margin-left: 310px;
     height: 70px;
+    /* margin-top: -70px; */
     overflow: auto;
-    background-color: #FBF7EB;
-    /* bottom: 0; */
-    /* left: 310px; */
+    background-color: #f7f2ea;
 }
 
 footer {
@@ -201,6 +259,16 @@ footer p {
     margin: 0;
 }
 
+footer a:link,
+footer a:visited,
+footer a:hover {
+    color: #2092bc;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 .logo {
     font-size: 1.5em;
     margin: 0.2em 0 0 0;
@@ -208,7 +276,7 @@ footer p {
 
 .logo a {
     padding: 0.2em 0;
-    color: #999;
+    color: #66fcf1;
 }
 
 
@@ -235,13 +303,20 @@ footer p {
 }
 
 .nav.main a {
-    color: #222;
+    color: #fff;
 }
 
 .nav a.active,
 .nav strong {
-    background-color: #fff;
+    background-color: #1f2833;
 }
+
+.nav a:hover {
+    color: #c5c6c7;
+}
+
+
+/* this is the prev-next-link at bottom in articles */
 
 .nav.page {
     margin-top: 1.5em;
@@ -260,14 +335,16 @@ footer p {
         /* header global */
         position: fixed;
         /* defined global above */
-        /* height: 55px; */
+        /* height: 60px; */
         top: 0;
     }
     .logo {
         float: left;
+        margin-left: 20px;
     }
     .nav.main {
         float: right;
+        margin-right: 20px;
     }
     .nav li {
         flex: 1 1 auto;
@@ -276,16 +353,18 @@ footer p {
         width: 6em;
     }
     main {
-        /* main global */
+        /* global template */
         /* position: fixed; */
         /* margin: 0px 0px 0px 0px; */
         /* padding: 3em 0em 2em 0em; */
         /* overflow: auto; */
+        /* color: #66fcf1; */
     }
     .subpages .content {
         /* article template */
+        /* Important  */
         display: flex;
-        margin: 55px 0px 0px 310px;
+        margin-left: 310px;
     }
     .subpages article {
         /* article template */
@@ -305,15 +384,18 @@ footer p {
         overflow-x: hidden;
         overflow-y: scroll;
         padding-top: 20px;
-        margin-top: 55px
+        margin-top: 60px;
+        color: #fff;
     }
     .nav.sub ul {
         margin-top: 1em;
         flex-direction: column;
-        border-top: 1px dotted #ccc;
+        /* border above first link */
+        /* border-top: 1px solid rgb(185, 27, 27); */
     }
     .nav.sub li {
-        border-bottom: 1px dotted #ccc;
+        /* put smth around nav.sub links */
+        /* border-bottom: 1px solid rgb(58, 17, 17); */
     }
     .nav.sub a,
     .nav.sub strong {
