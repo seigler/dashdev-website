@@ -366,7 +366,7 @@ footer a:hover {
     }
     main {
         /* global template */
-        position: static;
+        /* position: static; */
         /* margin-top: 60px; */
         /* min-height: 100%; */
         /* margin: 0px 0px 0px 0px; */
@@ -378,13 +378,14 @@ footer a:hover {
         /* article template */
         /* CHECK What does flex do??  */
         /* display: flex; */
+        /* justify-content: center; */
         margin-left: 310px;
     }
     .subpages article {
         /* article template */
         /* flex: 1 1 70%; */
         /* min-width for text content, eg "next: xxx" */
-        /* min-width: 100%; */
+        min-width: 100%;
     }
     .subpages .nav.sub {
         /* article template */

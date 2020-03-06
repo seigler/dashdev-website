@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Custom plugins - dashdevs-suite</title>
-	<meta name="description" content="The custom plugins used to create this website." />
+	<title>Build - dashdevs-suite</title>
+	<meta name="description" content="How to build the static site using Metalsmith." />
 	
 	<meta name="HandheldFriendly" content="true">
 	<meta name="MobileOptimized" content="320">
@@ -30,10 +30,16 @@
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../start/" class="active">Start</a>
+						<a href="../../docs/" class="active">docs</a>
 					</li>
 					<li>
 						<a href="../../article/">Articles</a>
+					</li>
+					<li>
+						<a href="../../tutorials/">tutorials</a>
+					</li>
+					<li>
+						<a href="../../boxes/">boxes</a>
 					</li>
 					<li>
 						<a href="../../contact/">Contact</a>
@@ -55,19 +61,19 @@
 					<ul>
 			
 						<li>
-							<a href="../../start/installation/">Installation</a>
+							<a href="../../docs/installation/">Installation</a>
 						</li>
 						<li>
-							<a href="../../start/build/">Build</a>
+							<a href="../../docs/build/">Build</a>
 						</li>
 						<li>
-							<a href="../../start/site-files/">Site files</a>
+							<a href="../../docs/site-files/">Site files</a>
 						</li>
 						<li>
-							<a href="../../start/page-definitions/">Page definitions</a>
+							<a href="../../docs/page-definitions/">Page definitions</a>
 						</li>
 						<li>
-							<strong>Custom plugins</strong>
+							<a href="../../docs/plugins/">Custom plugins</a>
 						</li>
 			
 					</ul>
@@ -76,28 +82,28 @@
 			
 			<article>
 
-				<h1>Custom plugins</h1>
+				<h1>Build</h1>
 
 
-				<p class="articleinfo">Published 2 March 2020, 77 words, 1-minute read</p>
+				<p class="articleinfo">Published 3 March 2020, 55 words, 1-minute read</p>
 
 
-				<p>The <code>build.js</code> file defines how the site is built using Metalsmith and various plugins.</p>
-<p>Several custom plugins have been created specifically for this site:</p>
-<ul>
-<li><code>lib/metalsmith-debug.js</code>: output debugging information to the console.</li>
-<li><code>lib/metalsmith-setdate.js</code>: ensure each page has a date. If a <code>date</code> is not defined in the page&#39;s front-matter, it is presumed to be the publish or file creation date.</li>
-<li><code>lib/metalsmith-moremeta.js</code>: applies further metadata to each page including the root folder, a default layout, primary and secondary navigation.</li>
-</ul>
+				<p>To build and launch the site in a test server using <a href="https://www.browsersync.io/">Browsersync</a>:</p>
+<pre><code>npm start</code></pre><p>(Stop the server with <code>Ctrl+C</code>.)</p>
+<p>To build the site for production and compress HTML files:</p>
+<pre><code>npm run production</code></pre><p>The site is built in the <code>/build</code> folder.</p>
+<p>Note you may want to change the <code>siteMeta.domain</code> and <code>siteMeta.rootpath</code> on lines 52 and 53 of <code>./build.js</code>.</p>
 
 
 
 				<nav class="nav page">
 					<ul>
 
-						<li><a href="../../start/page-definitions/" class="back">&laquo; back: Page definitions</a></li>
+						<li><a href="../../docs/installation/" class="back">&laquo; back: Installation</a></li>
 						</p>
 
+						<li><a href="../../docs/site-files/" class="next">next: Site files &raquo;</a></li>
+						</p>
 
 					</ul>
 				</nav>
@@ -114,6 +120,8 @@
 		
 		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
+		    
+		    
 		
 		</footer>
 </body>

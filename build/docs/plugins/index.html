@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Installation - dashdevs-suite</title>
-	<meta name="description" content="How to install this demonstration code." />
+	<title>Custom plugins - dashdevs-suite</title>
+	<meta name="description" content="The custom plugins used to create this website." />
 	
 	<meta name="HandheldFriendly" content="true">
 	<meta name="MobileOptimized" content="320">
@@ -30,10 +30,16 @@
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../start/" class="active">Start</a>
+						<a href="../../docs/" class="active">docs</a>
 					</li>
 					<li>
 						<a href="../../article/">Articles</a>
+					</li>
+					<li>
+						<a href="../../tutorials/">tutorials</a>
+					</li>
+					<li>
+						<a href="../../boxes/">boxes</a>
 					</li>
 					<li>
 						<a href="../../contact/">Contact</a>
@@ -55,19 +61,19 @@
 					<ul>
 			
 						<li>
-							<strong>Installation</strong>
+							<a href="../../docs/installation/">Installation</a>
 						</li>
 						<li>
-							<a href="../../start/build/">Build</a>
+							<a href="../../docs/build/">Build</a>
 						</li>
 						<li>
-							<a href="../../start/site-files/">Site files</a>
+							<a href="../../docs/site-files/">Site files</a>
 						</li>
 						<li>
-							<a href="../../start/page-definitions/">Page definitions</a>
+							<a href="../../docs/page-definitions/">Page definitions</a>
 						</li>
 						<li>
-							<a href="../../start/plugins/">Custom plugins</a>
+							<a href="../../docs/plugins/">Custom plugins</a>
 						</li>
 			
 					</ul>
@@ -76,28 +82,28 @@
 			
 			<article>
 
-				<h1>Installation</h1>
+				<h1>Custom plugins</h1>
 
 
-				<p class="articleinfo">Published 2 March 2020, 27 words, 1-minute read</p>
+				<p class="articleinfo">Published 2 March 2020, 77 words, 1-minute read</p>
 
 
-				<p>Please ensure <a href="https://nodejs.org/">Node.js</a> and <a href="https://git-scm.com/">Git</a> are installed on your system.</p>
-<p>Download the demonstration code and switch to directory:</p>
-<p>   git clone <a href="mailto:git@github.com">git@github.com</a>:dashdev-suite/dashdev-website.git
-    cd metalsmith-demo</p>
-<p>Install dependencies:</p>
-<pre><code>npm install</code></pre>
+				<p>The <code>build.js</code> file defines how the site is built using Metalsmith and various plugins.</p>
+<p>Several custom plugins have been created specifically for this site:</p>
+<ul>
+<li><code>lib/metalsmith-debug.js</code>: output debugging information to the console.</li>
+<li><code>lib/metalsmith-setdate.js</code>: ensure each page has a date. If a <code>date</code> is not defined in the page&#39;s front-matter, it is presumed to be the publish or file creation date.</li>
+<li><code>lib/metalsmith-moremeta.js</code>: applies further metadata to each page including the root folder, a default layout, primary and secondary navigation.</li>
+</ul>
+
 
 
 				<nav class="nav page">
 					<ul>
 
-						<li><a href="../../start/" class="back">&laquo; back: Start</a></li>
+						<li><a href="../../docs/page-definitions/" class="back">&laquo; back: Page definitions</a></li>
 						</p>
 
-						<li><a href="../../start/build/" class="next">next: Build &raquo;</a></li>
-						</p>
 
 					</ul>
 				</nav>
@@ -114,6 +120,8 @@
 		
 		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
+		    
+		    
 		
 		</footer>
 </body>

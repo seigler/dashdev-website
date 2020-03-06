@@ -1,6 +1,6 @@
 ---
 title: Contact
-priority: 0.7
+priority: 0.5
 ---
 
 Any questions?

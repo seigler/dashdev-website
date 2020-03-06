@@ -7,7 +7,8 @@
 		{{#each navsub}}
 			<li>
 			{{#if active}}
-				<strong>{{title}}</strong>
+				{{!-- <strong>{{title}}</strong> --}}
+				<a href="{{path}}">{{title}}</a>
 			{{else}}
 				<a href="{{path}}">{{title}}</a>
 			{{/if}}

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dashdevs-suite]]></title><description><![CDATA[dashdevs-suite metalsmith website]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Mar 2020 14:08:14 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Articles]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dashdevs-suite]]></title><description><![CDATA[dashdevs-suite metalsmith website]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Mar 2020 18:42:28 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Articles]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 
 <head>
@@ -30,10 +30,16 @@
 						<a href="../">Home</a>
 					</li>
 					<li>
-						<a href="../start/">Start</a>
+						<a href="../docs/">docs</a>
 					</li>
 					<li>
 						<a href="../article/" class="active">Articles</a>
+					</li>
+					<li>
+						<a href="../tutorials/">tutorials</a>
+					</li>
+					<li>
+						<a href="../boxes/">boxes</a>
 					</li>
 					<li>
 						<a href="../contact/">Contact</a>
@@ -133,6 +139,8 @@
 		
 		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
+		    
+		    
 		
 		</footer>
 </body>
@@ -169,10 +177,16 @@
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../start/">Start</a>
+						<a href="../../docs/">docs</a>
 					</li>
 					<li>
 						<a href="../../article/" class="active">Articles</a>
+					</li>
+					<li>
+						<a href="../../tutorials/">tutorials</a>
+					</li>
+					<li>
+						<a href="../../boxes/">boxes</a>
 					</li>
 					<li>
 						<a href="../../contact/">Contact</a>
@@ -194,7 +208,7 @@
 					<ul>
 			
 						<li>
-							<strong>Usage options</strong>
+							<a href="../../article/usage/">Usage options</a>
 						</li>
 						<li>
 							<a href="../../article/gotchas/">Gotchas</a>
@@ -254,6 +268,8 @@
 		
 		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
+		    
+		    
 		
 		</footer>
 </body>
@@ -290,10 +306,16 @@
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../start/">Start</a>
+						<a href="../../docs/">docs</a>
 					</li>
 					<li>
 						<a href="../../article/" class="active">Articles</a>
+					</li>
+					<li>
+						<a href="../../tutorials/">tutorials</a>
+					</li>
+					<li>
+						<a href="../../boxes/">boxes</a>
 					</li>
 					<li>
 						<a href="../../contact/">Contact</a>
@@ -318,7 +340,7 @@
 							<a href="../../article/usage/">Usage options</a>
 						</li>
 						<li>
-							<strong>Gotchas</strong>
+							<a href="../../article/gotchas/">Gotchas</a>
 						</li>
 						<li>
 							<a href="../../article/gulp/">Gulp</a>
@@ -374,6 +396,8 @@
 		
 		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
+		    
+		    
 		
 		</footer>
 </body>
@@ -410,10 +434,16 @@
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../start/">Start</a>
+						<a href="../../docs/">docs</a>
 					</li>
 					<li>
 						<a href="../../article/" class="active">Articles</a>
+					</li>
+					<li>
+						<a href="../../tutorials/">tutorials</a>
+					</li>
+					<li>
+						<a href="../../boxes/">boxes</a>
 					</li>
 					<li>
 						<a href="../../contact/">Contact</a>
@@ -441,7 +471,7 @@
 							<a href="../../article/gotchas/">Gotchas</a>
 						</li>
 						<li>
-							<strong>Gulp</strong>
+							<a href="../../article/gulp/">Gulp</a>
 						</li>
 						<li>
 							<a href="../../article/future/">Future publication</a>
@@ -511,6 +541,8 @@ gulp.task(&#39;html&#39;, function() {
 		
 		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
+		    
+		    
 		
 		</footer>
 </body>
@@ -547,10 +579,16 @@ gulp.task(&#39;html&#39;, function() {
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../start/">Start</a>
+						<a href="../../docs/">docs</a>
 					</li>
 					<li>
 						<a href="../../article/" class="active">Articles</a>
+					</li>
+					<li>
+						<a href="../../tutorials/">tutorials</a>
+					</li>
+					<li>
+						<a href="../../boxes/">boxes</a>
 					</li>
 					<li>
 						<a href="../../contact/">Contact</a>
@@ -581,7 +619,7 @@ gulp.task(&#39;html&#39;, function() {
 							<a href="../../article/gulp/">Gulp</a>
 						</li>
 						<li>
-							<strong>Future publication</strong>
+							<a href="../../article/future/">Future publication</a>
 						</li>
 			
 					</ul>
@@ -622,6 +660,8 @@ gulp.task(&#39;html&#39;, function() {
 		
 		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
+		    
+		    
 		
 		</footer>
 </body>
