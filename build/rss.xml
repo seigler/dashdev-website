@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dashdevs-suite]]></title><description><![CDATA[dashdevs-suite metalsmith website]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Mar 2020 12:23:38 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Articles]]></title><description><![CDATA[<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dashdevs-suite]]></title><description><![CDATA[dashdevs-suite metalsmith website]]></description><link>http://127.0.0.1</link><generator>metalsmith-feed</generator><lastBuildDate>Fri, 06 Mar 2020 14:08:14 GMT</lastBuildDate><atom:link href="http://127.0.0.1/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Articles]]></title><description><![CDATA[<!DOCTYPE html>
 <html>
 
 <head>
@@ -130,11 +130,9 @@
 
 		<footer>
 		
-		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here</a></p>
 		
-		    <!-- <p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p> -->
+		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
-		    <!-- <p class="siteinfo">Development build, version 1.0.0, article template</p> -->
 		
 		</footer>
 </body>
@@ -253,11 +251,9 @@
 
 		<footer>
 		
-		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here</a></p>
 		
-		    <!-- <p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p> -->
+		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
-		    <!-- <p class="siteinfo">Development build, version 1.0.0, article template</p> -->
 		
 		</footer>
 </body>
@@ -375,11 +371,9 @@
 
 		<footer>
 		
-		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here</a></p>
 		
-		    <!-- <p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p> -->
+		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
-		    <!-- <p class="siteinfo">Development build, version 1.0.0, article template</p> -->
 		
 		</footer>
 </body>
@@ -514,11 +508,9 @@ gulp.task(&#39;html&#39;, function() {
 
 		<footer>
 		
-		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here</a></p>
 		
-		    <!-- <p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p> -->
+		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
-		    <!-- <p class="siteinfo">Development build, version 1.0.0, article template</p> -->
 		
 		</footer>
 </body>
@@ -627,11 +619,9 @@ gulp.task(&#39;html&#39;, function() {
 
 		<footer>
 		
-		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here</a></p>
 		
-		    <!-- <p>By <a href="https://chat.dashdevs.org">dashdevs</a> and featured on <a href="http://www.dashdevs.org/">DashDevs.org</a></p> -->
+		    <p>Help make this page better. <a href="https://github.com/dashdev-suite/dashdev-website/tree/master/src">Edit here >></a></p>
 		
-		    <!-- <p class="siteinfo">Development build, version 1.0.0, article template</p> -->
 		
 		</footer>
 </body>

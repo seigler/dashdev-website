@@ -166,7 +166,7 @@ a:active {
 
 .pagelist a:hover,
 .pagelist a:focus {
-    background-color: #5a14dd;
+    /* background-color: #5a14dd; */
     border-color: rgb(238, 9, 150);
 }
 
@@ -198,6 +198,7 @@ main {
     /* min-height: 100%; */
     /* min-width: 100%; */
     overflow: auto;
+    min-height: 100%;
 }
 
 .content {
@@ -256,6 +257,7 @@ footer {
 }
 
 footer {
+    /* font-family: 'Open Sans', sans-serif; */
     font-size: 0.90em;
     padding: 1em;
     text-align: center;
@@ -303,7 +305,7 @@ footer a:hover {
 .nav a,
 .nav strong {
     display: block;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
     padding: 0.6em 0;
 }
@@ -313,6 +315,7 @@ footer a:hover {
     /* font-size: 1.6em; */
     text-transform: uppercase;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 
 .nav a.active,
@@ -363,7 +366,9 @@ footer a:hover {
     }
     main {
         /* global template */
-        /* position: fixed; */
+        position: static;
+        /* margin-top: 60px; */
+        /* min-height: 100%; */
         /* margin: 0px 0px 0px 0px; */
         /* padding: 3em 0em 2em 0em; */
         /* overflow: auto; */
@@ -372,32 +377,32 @@ footer a:hover {
     .subpages .content {
         /* article template */
         /* CHECK What does flex do??  */
-        display: flex;
+        /* display: flex; */
         margin-left: 310px;
     }
     .subpages article {
         /* article template */
         /* flex: 1 1 70%; */
         /* min-width for text content, eg "next: xxx" */
-        min-width: 100%;
+        /* min-width: 100%; */
     }
     .subpages .nav.sub {
         /* article template */
         height: 100%;
         width: 310px;
         position: fixed;
-        z-index: 1;
+        /* z-index: 1; */
         top: 0;
         left: 0;
         background-color: #111833;
         overflow-x: hidden;
         overflow-y: scroll;
-        padding-top: 20px;
+        padding-top: 40px;
         margin-top: 60px;
         color: #fff;
     }
     .nav.sub ul {
-        margin-top: 1em;
+        /* margin-top: 1em; */
         flex-direction: column;
         /* border above first link */
         /* border-top: 1px solid rgb(185, 27, 27); */
@@ -410,6 +415,8 @@ footer a:hover {
     .nav.sub strong {
         text-align: left;
         padding-left: 0.75em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.05em;
     }
     .nav.page a {
         text-align: left;
