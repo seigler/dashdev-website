@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-{{> meta }}
+	{{> meta }}
 </head>
+
 <body>
 
-{{> header }}
+	{{> header }}
 
-<main{{#if navsub}} class="subpages"{{/if}}>
+	<main{{#if navsub}} class="subpages" {{/if}}>
 
-	{{> navsub }}
+		<div class="content">
 
-	<div class="content">
+			{{> navsub }}
+			
+			<article>
 
-		<article>
+				<h1>{{ title }}</h1>
 
-			<h1>{{ title }}</h1>
-
-			{{#if isPage}}
-			{{else}}
+				{{#if isPage}}
+				{{else}}
 
 				<p class="articleinfo">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }}-minute read</p>
 
-			{{/if}}
+				{{/if}}
 
-			{{{ contents }}}
+				{{{ contents }}}
 
-			{{#if isPage}}
+				{{#if isPage}}
 
 				{{> pagelist }}
 
-			{{else}}
+				{{else}}
 
 				<nav class="nav page">
 					<ul>
 
-					{{#if previous.title }}
-						<li><a href="{{ root }}{{ previous.path }}/" class="back">&laquo; back: {{ previous.title }}</a></li></p>
-					{{/if}}
+						{{#if previous.title }}
+						<li><a href="{{ root }}{{ previous.path }}/" class="back">&laquo; back: {{ previous.title }}</a></li>
+						</p>
+						{{/if}}
 
-					{{#if next.title }}
-						<li><a href="{{ root }}{{ next.path }}/" class="next">next: {{ next.title }} &raquo;</a></li></p>
-					{{/if}}
+						{{#if next.title }}
+						<li><a href="{{ root }}{{ next.path }}/" class="next">next: {{ next.title }} &raquo;</a></li>
+						</p>
+						{{/if}}
 
 					</ul>
 				</nav>
 
-			{{/if}}
+				{{/if}}
 
 			</article>
 
 		</div>
 
-</main>
+		</main>
 
-{{> footer template='article' }}
+		{{> footer template='article' }}
 
 </body>
+
 </html>

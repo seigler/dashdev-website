@@ -1,7 +1,7 @@
 /* basic page styles */
 
 
-/* dark blue: #1f2833; */
+/* current default: 111833 - blue-weak: #1f2833; brown-red: 33111b;
 
 
 /* light yellow: FBF7EB, new lighter: #f7f2ea */
@@ -30,8 +30,8 @@ body {
     /* margin-left: 310px; */
     /* TODO: not sure this is clean solution */
     /* set background-color for all parts default, specially below content  */
-    background-color: #f7f2ea;
-    /* color: #1f2833; */
+    /* background-color: #f7f2ea; */
+    /* color: #111833; */
     line-height: 1.5;
     /* TODO: put footer at bottom 
     https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
@@ -100,7 +100,7 @@ pre {
     font-weight: bold;
     padding: 0.2em 0.4em;
     margin: 1em 0 1.5em 3em;
-    background-color: #1f2833;
+    background-color: #111833;
     border-radius: 3px;
     overflow: auto;
 }
@@ -120,7 +120,7 @@ code {
 pre code {
     padding: 0;
     color: #eff5ef;
-    background-color: #1f2833;
+    background-color: #111833;
     padding-left: 8px;
     line-height: 2.5;
     font-size: 0.82em;
@@ -161,7 +161,7 @@ a:active {
     outline: 0 none;
     overflow: hidden;
     /* color for links in pagelist type page eg "Installation" (1 from 3) */
-    color: #1f2833;
+    color: #111833;
 }
 
 .pagelist a:hover,
@@ -176,13 +176,13 @@ a:active {
 }
 
 .pagelist p {
-    color: #1f2833;
+    color: #111833;
 }
 
 p.articleinfo {
     font-size: 0.8em;
     /* currently date */
-    color: #1f2833;
+    color: #111833;
 }
 
 
@@ -201,16 +201,19 @@ main {
 }
 
 .content {
-    /* this is the content of main navigation header */
-    /* CHECK min-width makes things too wide */
+    /* min-height "influences" the content of navmain=header but it should exclude the <header>*/
+    /* CHECK min-width makes things too wide in the <section> area */
     /* min-width: 100%; */
-    min-height: 100%;
-    overflow: auto;
+    /* TODO: there must be bug in other place!
+    this is needed to remove scroll in header navigation, so its main navigation header!? */
+    /* min-height: 100%; */
+    /* overflow: auto; */
     /* move font a little down */
     padding-top: 10px;
 }
 
 article {
+    /* this only applys to <section> while .content is also applied */
     /* for page and article template */
     /* Distance left, right 4em */
     padding: 0 4em;
@@ -235,22 +238,25 @@ header {
     /* eg can overwrite value for "if desktop" below */
     height: 60px;
     overflow: auto;
-    background-color: #1f2833
+    background-color: #111833;
+    border-bottom: solid;
+    color: #66fcf1;
 }
 
 footer {
     /* footer global */
+    /* TODO: move footer bottom when article not end of page */
     clear: both;
     /* width: 100%; */
     margin-left: 310px;
     height: 70px;
     /* margin-top: -70px; */
-    overflow: auto;
+    /* overflow: auto; */
     background-color: #f7f2ea;
 }
 
 footer {
-    font-size: 0.85em;
+    font-size: 0.90em;
     padding: 1em;
     text-align: center;
 }
@@ -304,11 +310,14 @@ footer a:hover {
 
 .nav.main a {
     color: #fff;
+    /* font-size: 1.6em; */
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .nav a.active,
 .nav strong {
-    background-color: #1f2833;
+    background-color: #111833;
 }
 
 .nav a:hover {
@@ -362,7 +371,7 @@ footer a:hover {
     }
     .subpages .content {
         /* article template */
-        /* Important  */
+        /* CHECK What does flex do??  */
         display: flex;
         margin-left: 310px;
     }
@@ -380,7 +389,7 @@ footer a:hover {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #1f2833;
+        background-color: #111833;
         overflow-x: hidden;
         overflow-y: scroll;
         padding-top: 20px;

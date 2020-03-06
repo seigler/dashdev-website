@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-{{> meta }}
+	{{> meta }}
 </head>
+
 <body>
 
-{{> header }}
+	{{> header }}
 
-<main{{#if navsub}} class="subpages"{{/if}}>
+	{{!-- removed since there is no navsub (sidebar) in page layout --}}
+	{{!-- <main{{#if navsub}} class="subpages"{{/if}}> --}}
+	<main>
 
-	<div class="content">
+		<div class="content">
 
-		{{> navsub }}
+			{{!-- {{> navsub }} --}}
 
-		<article>
+			<article>
 
-			{{#if title}}
+				{{#if title}}
 				<h1>{{ title }}</h1>
-			{{/if}}
+				{{/if}}
 
-			{{{ contents }}}
+				{{{ contents }}}
 
-		</article>
+			</article>
 
-	</div>
+		</div>
 
-</main>
+	</main>
 
-<!-- {{> footer template='page' }}   -->
+	<!-- {{> footer template='page' }}   -->
 
 </body>
+
 </html>
