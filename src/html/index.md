@@ -19,4 +19,4 @@ Metalsmith could be used to create:
 * application prototypes
 * build tools or project scaffolding
 
-[Get started&hellip;]({{ root }}start/)
+[Get started&hellip;]({{ root }}docs/)

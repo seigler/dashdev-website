@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Future publication - dashdevs-suite</title>
-	<meta name="description" content="This article will be published after 1 March, 2016." />
+	<title>Custom plugins - dashdevs-suite</title>
+	<meta name="description" content="The custom plugins used to create this website." />
 	
 	<meta name="HandheldFriendly" content="true">
 	<meta name="MobileOptimized" content="320">
@@ -30,10 +30,10 @@
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../docs/">docs</a>
+						<a href="../../docs/" class="active">docs</a>
 					</li>
 					<li>
-						<a href="../../article/" class="active">Articles</a>
+						<a href="../../article/">Articles</a>
 					</li>
 					<li>
 						<a href="../../tutorials/">tutorials</a>
@@ -61,16 +61,19 @@
 					<ul>
 			
 						<li>
-							<a href="../../article/usage/">Usage options</a>
+							<a href="../../docs/installation/">Installation</a>
 						</li>
 						<li>
-							<a href="../../article/gotchas/">Gotchas</a>
+							<a href="../../docs/build/">Build</a>
 						</li>
 						<li>
-							<a href="../../article/gulp/">Gulp</a>
+							<a href="../../docs/site-files/">Site files</a>
 						</li>
 						<li>
-							<a href="../../article/future/">Future publication</a>
+							<a href="../../docs/page-definitions/">Page definitions</a>
+						</li>
+						<li>
+							<a href="../../docs/plugins/">Custom plugins</a>
 						</li>
 			
 					</ul>
@@ -79,20 +82,26 @@
 			
 			<article>
 
-				<h1>Future publication</h1>
+				<h1>Custom plugins</h1>
 
 
-				<p class="articleinfo">Published 1 March 2016, 16 words, 1-minute read</p>
+				<p class="articleinfo">Published 2 March 2020, 77 words, 1-minute read</p>
 
 
-				<p>This article will only appear if the site is built is run after 1 March, 2016.</p>
+				<p>The <code>build.js</code> file defines how the site is built using Metalsmith and various plugins.</p>
+<p>Several custom plugins have been created specifically for this site:</p>
+<ul>
+<li><code>lib/metalsmith-debug.js</code>: output debugging information to the console.</li>
+<li><code>lib/metalsmith-setdate.js</code>: ensure each page has a date. If a <code>date</code> is not defined in the page&#39;s front-matter, it is presumed to be the publish or file creation date.</li>
+<li><code>lib/metalsmith-moremeta.js</code>: applies further metadata to each page including the root folder, a default layout, primary and secondary navigation.</li>
+</ul>
 
 
 
 				<nav class="nav page">
 					<ul>
 
-						<li><a href="../../article/gulp/" class="back">&laquo; back: Gulp</a></li>
+						<li><a href="../../docs/page-definitions/" class="back">&laquo; back: Page definitions</a></li>
 						</p>
 
 

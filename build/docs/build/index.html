@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Future publication - dashdevs-suite</title>
-	<meta name="description" content="This article will be published after 1 March, 2016." />
+	<title>Build - dashdevs-suite</title>
+	<meta name="description" content="How to build the static site using Metalsmith." />
 	
 	<meta name="HandheldFriendly" content="true">
 	<meta name="MobileOptimized" content="320">
@@ -30,10 +30,10 @@
 						<a href="../../">Home</a>
 					</li>
 					<li>
-						<a href="../../docs/">docs</a>
+						<a href="../../docs/" class="active">docs</a>
 					</li>
 					<li>
-						<a href="../../article/" class="active">Articles</a>
+						<a href="../../article/">Articles</a>
 					</li>
 					<li>
 						<a href="../../tutorials/">tutorials</a>
@@ -61,16 +61,19 @@
 					<ul>
 			
 						<li>
-							<a href="../../article/usage/">Usage options</a>
+							<a href="../../docs/installation/">Installation</a>
 						</li>
 						<li>
-							<a href="../../article/gotchas/">Gotchas</a>
+							<a href="../../docs/build/">Build</a>
 						</li>
 						<li>
-							<a href="../../article/gulp/">Gulp</a>
+							<a href="../../docs/site-files/">Site files</a>
 						</li>
 						<li>
-							<a href="../../article/future/">Future publication</a>
+							<a href="../../docs/page-definitions/">Page definitions</a>
+						</li>
+						<li>
+							<a href="../../docs/plugins/">Custom plugins</a>
 						</li>
 			
 					</ul>
@@ -79,22 +82,28 @@
 			
 			<article>
 
-				<h1>Future publication</h1>
+				<h1>Build</h1>
 
 
-				<p class="articleinfo">Published 1 March 2016, 16 words, 1-minute read</p>
+				<p class="articleinfo">Published 3 March 2020, 55 words, 1-minute read</p>
 
 
-				<p>This article will only appear if the site is built is run after 1 March, 2016.</p>
+				<p>To build and launch the site in a test server using <a href="https://www.browsersync.io/">Browsersync</a>:</p>
+<pre><code>npm start</code></pre><p>(Stop the server with <code>Ctrl+C</code>.)</p>
+<p>To build the site for production and compress HTML files:</p>
+<pre><code>npm run production</code></pre><p>The site is built in the <code>/build</code> folder.</p>
+<p>Note you may want to change the <code>siteMeta.domain</code> and <code>siteMeta.rootpath</code> on lines 52 and 53 of <code>./build.js</code>.</p>
 
 
 
 				<nav class="nav page">
 					<ul>
 
-						<li><a href="../../article/gulp/" class="back">&laquo; back: Gulp</a></li>
+						<li><a href="../../docs/installation/" class="back">&laquo; back: Installation</a></li>
 						</p>
 
+						<li><a href="../../docs/site-files/" class="next">next: Site files &raquo;</a></li>
+						</p>
 
 					</ul>
 				</nav>
