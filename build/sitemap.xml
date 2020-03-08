@@ -3,9 +3,9 @@
 <url> <loc>http://127.0.0.1/</loc> <priority>1.0</priority> </url>
 <url> <loc>http://127.0.0.1/article/future/</loc> </url>
 <url> <loc>http://127.0.0.1/article/gotchas/</loc> </url>
-<url> <loc>http://127.0.0.1/article/gulp/</loc> </url>
 <url> <loc>http://127.0.0.1/article/</loc> <priority>0.8</priority> </url>
 <url> <loc>http://127.0.0.1/article/usage/</loc> </url>
+<url> <loc>http://127.0.0.1/article/gulp/</loc> </url>
 <url> <loc>http://127.0.0.1/boxes/</loc> <priority>0.6</priority> </url>
 <url> <loc>http://127.0.0.1/contact/</loc> <priority>0.5</priority> </url>
 <url> <loc>http://127.0.0.1/docs/build/</loc> <priority>0.5</priority> </url>
