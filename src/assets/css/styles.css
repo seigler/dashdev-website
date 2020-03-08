@@ -15,30 +15,19 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+    box-sizing: inherit;
     padding: 0;
     margin: 0;
 }
 
 body {
-    /* font-family: georgia, cambria, "times new roman", times, serif; */
     font-family: 'Open Sans', sans-serif;
     font-size: 1.05em;
-    /* only with position static text will auto-format when making window smaller */
-    /* position: relative; */
-    /* margin-top: 60px; */
-    /* margin-left: 310px; */
-    /* TODO: not sure this is clean solution */
-    /* set background-color for all parts default, specially below content  */
-    /* background-color: #f7f2ea; */
-    /* color: #111833; */
     line-height: 1.5;
-    /* TODO: put footer at bottom 
-    https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
-    /* min-height: 100%; */
-    /* TODO: repair, only scrolling in body possible */
-    overflow: auto;
-    /* padding-top: 30px; */
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 article,
@@ -185,20 +174,18 @@ p.articleinfo {
     color: #111833;
 }
 
-
 /* layout */
 
 main {
     /* for page and article template */
     clear: both;
     background-color: #fff;
-    margin-top: 60px;
-    /* margin-bottom: 0; */
     background-color: #f7f2ea;
-    /* min-height: 100%; */
-    /* min-width: 100%; */
     overflow: auto;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .content {
@@ -217,9 +204,10 @@ article {
     /* this only applys to <section> while .content is also applied */
     /* for page and article template */
     /* Distance left, right 4em */
-    padding: 0 4em;
+    padding: 0 1em;
     /* Distance top 2em for content */
     padding-top: 2em;
+    flex-grow: 1;
 }
 
 article a:link,
@@ -233,31 +221,19 @@ article a:hover {
 }
 
 header {
-    /* header global */
-    clear: both;
-    width: 100%;
-    /* eg can overwrite value for "if desktop" below */
-    height: 60px;
-    overflow: auto;
     background-color: #111833;
     border-bottom: solid;
     color: #66fcf1;
+    display: flex;
+    flex-direction: column;
+    padding: 7px 1em 0;
 }
 
 footer {
     /* footer global */
-    /* TODO: move footer bottom when article not end of page */
     clear: both;
-    /* width: 100%; */
-    margin-left: 310px;
-    height: 70px;
-    /* margin-top: -70px; */
-    /* overflow: auto; */
     background-color: #f7f2ea;
-}
-
-footer {
-    /* font-family: 'Open Sans', sans-serif; */
+    margin-top: 2em;
     font-size: 0.90em;
     padding: 1em;
     text-align: center;
@@ -336,39 +312,52 @@ footer a:hover {
     border-bottom: 1px solid #ccc;
 }
 
+.subpages .nav.sub {
+    background-color: #111833;
+    color: #fff;
+}
+
 @media (min-width: 16em) {
     .nav li {
         flex: 1 1 50%;
     }
 }
 
-@media (min-width: 32em) {
+main > .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 0;
+}
+
+/* styles.css | http://localhost:3000/css/styles.css */
+
+@media (min-width: 50em) {
     header {
         /* header global */
         position: fixed;
-        /* defined global above */
-        /* height: 60px; */
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 60px;
         top: 0;
-    }
-    .logo {
-        float: left;
-        margin-left: 20px;
+        padding: 0 1em;
     }
     .nav.main {
-        float: right;
+        margin-left: auto;
         margin-right: 20px;
     }
     .nav li {
         flex: 1 1 auto;
     }
     .nav.main li {
-        width: 6em;
+        padding: 0 0.5em;
     }
     main {
         /* global template */
         /* position: static; */
-        /* margin-top: 60px; */
-        /* min-height: 100%; */
+        padding-top: 60px;
+        min-height: 100%;
         /* margin: 0px 0px 0px 0px; */
         /* padding: 3em 0em 2em 0em; */
         /* overflow: auto; */
@@ -389,18 +378,15 @@ footer a:hover {
     }
     .subpages .nav.sub {
         /* article template */
-        height: 100%;
         width: 310px;
         position: fixed;
         /* z-index: 1; */
-        top: 0;
+        top: 60px;
         left: 0;
-        background-color: #111833;
+        bottom: 0;
         overflow-x: hidden;
         overflow-y: scroll;
-        padding-top: 40px;
-        margin-top: 60px;
-        color: #fff;
+        padding-top: 20px;
     }
     .nav.sub ul {
         /* margin-top: 1em; */
@@ -426,5 +412,9 @@ footer a:hover {
     }
     .nav.page a.next {
         text-align: right;
+    }
+    article {
+        padding-left: 4em;
+        padding-right: 4em;
     }
 }
