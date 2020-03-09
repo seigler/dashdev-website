@@ -21,7 +21,10 @@ siteMeta = {
     author: 'dashdevs',
     contact: 'https://chat.dashdevs.org',
     domain: devBuild ? 'http://127.0.0.1' : 'https://dashdev-suite.github.io', // set domain
-    rootpath: devBuild ? null : '/dashdev-website/build/' // set absolute path (null for relative)
+    // rootpath: devBuild ? null : '/dashdev-website/build/' // set absolute path (null for relative)
+    // for gh-pages npm package usage without "build" dir:
+    rootpath: devBuild ? null : '/dashdev-website/' // set absolute path (null for relative)
+
 };
 
 templateConfig = {
