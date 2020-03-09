@@ -3,7 +3,9 @@ Thumbs.db
 .npm
 .vscode
 
-node_modules
+node_modules/
 npm-debug.log*
-logs
+logs/
 *.log
+
+build/
