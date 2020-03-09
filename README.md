@@ -43,9 +43,12 @@ npm run production-win
 
 The site is built in the `/build` folder.
 
+To deploy the contents of the `/build` folder to Github Pages, run the appropriate production build command, then:
+
+```bash
+npm run deploy
+```
+
 ## Further information
  
 The [built site](https://rawgit.com/dashdev-suite/dashdev-website/master/build/) provides further information about site files and settings.
-
-
-
