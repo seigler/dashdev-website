@@ -86,11 +86,11 @@ img {
 
 pre {
     /* font-size: 1.05em; */
-    font-weight: bold;
     padding: 0.2em 0.4em;
-    margin: 1em 0 1.5em 3em;
+    margin: 1em 0 1.5em 1.5em;
     background-color: #111833;
-    border-radius: 3px;
+    /* makes code-block border round */
+    border-radius: 10px;
     overflow: auto;
 }
 
@@ -99,10 +99,9 @@ code {
     font-family: Consolas, Menlo, "DejaVu Mono", monospace;
     color: #E831C1;
     background-color: #ddd7d4;
-    /* CHECK needed for bold, pre not enough!? */
     font-weight: bold;
     /* makes single code border round */
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 0 0.4em;
 }
 
@@ -111,10 +110,9 @@ pre code {
     color: #eff5ef;
     background-color: #111833;
     padding-left: 8px;
-    line-height: 2.5;
-    font-size: 0.82em;
-    /* TODO make border round */
-    /* border-radius: 5px; */
+    line-height: 2.9;
+    font-size: 0.84em;
+    font-weight: normal;
 }
 
 a:link,
@@ -174,6 +172,7 @@ p.articleinfo {
     color: #111833;
 }
 
+
 /* layout */
 
 main {
@@ -189,21 +188,13 @@ main {
 }
 
 .content {
-    /* min-height "influences" the content of navmain=header but it should exclude the <header>*/
-    /* CHECK min-width makes things too wide in the <section> area */
-    /* min-width: 100%; */
-    /* TODO: there must be bug in other place!
-    this is needed to remove scroll in header navigation, so its main navigation header!? */
-    /* min-height: 100%; */
-    /* overflow: auto; */
     /* move font a little down */
     padding-top: 10px;
 }
 
 article {
-    /* this only applys to <section> while .content is also applied */
     /* for page and article template */
-    /* Distance left, right 4em */
+    /* Distance left, right 1em */
     padding: 0 1em;
     /* Distance top 2em for content */
     padding-top: 2em;
@@ -323,12 +314,13 @@ footer a:hover {
     }
 }
 
-main > .content {
+main>.content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     padding-top: 0;
 }
+
 
 /* styles.css | http://localhost:3000/css/styles.css */
 
@@ -355,24 +347,15 @@ main > .content {
     }
     main {
         /* global template */
-        /* position: static; */
         padding-top: 60px;
         min-height: 100%;
-        /* margin: 0px 0px 0px 0px; */
-        /* padding: 3em 0em 2em 0em; */
-        /* overflow: auto; */
-        /* color: #66fcf1; */
     }
     .subpages .content {
         /* article template */
-        /* CHECK What does flex do??  */
-        /* display: flex; */
-        /* justify-content: center; */
         margin-left: 310px;
     }
     .subpages article {
         /* article template */
-        /* flex: 1 1 70%; */
         /* min-width for text content, eg "next: xxx" */
         min-width: 100%;
     }
@@ -380,7 +363,6 @@ main > .content {
         /* article template */
         width: 310px;
         position: fixed;
-        /* z-index: 1; */
         top: 60px;
         left: 0;
         bottom: 0;
