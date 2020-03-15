@@ -312,14 +312,15 @@ and article prev/next navigation links (.nav.page) */
 
 .subpages .nav.sub {
     background-color: #111833;
-    /* color: #fff; */
-    font-size: 0.85em;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    color: #fff;
+    font-size: 0.9em;
 }
 
+.subpages .nav.sub a {}
+
 .subpages .nav.sub a:hover {
-    color: #c5c6c7;
+    /* color: #c5c6c7; */
+    text-decoration: underline;
 }
 
 @media (min-width: 16em) {
