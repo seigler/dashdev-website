@@ -123,8 +123,11 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #c5c6c7;
+    /* color: #c5c6c7; */
 }
+
+
+/* this is the Article-Layout List/Overview page */
 
 .pagelist {
     list-style-type: none;
@@ -255,7 +258,8 @@ footer a:hover {
 }
 
 
-/* navigation */
+/* navigation bar top (nav.main) and left (nav.sub) 
+and article prev/next navigation links (.nav.page) */
 
 .nav ul {
     display: flex;
@@ -285,13 +289,13 @@ footer a:hover {
     font-family: 'Oswald', sans-serif;
 }
 
+.nav.main a:hover {
+    color: #c5c6c7;
+}
+
 .nav a.active,
 .nav strong {
     background-color: #111833;
-}
-
-.nav a:hover {
-    color: #c5c6c7;
 }
 
 
@@ -303,9 +307,19 @@ footer a:hover {
     border-bottom: 1px solid #ccc;
 }
 
+
+/* this is the left vertical navigation bar */
+
 .subpages .nav.sub {
     background-color: #111833;
-    color: #fff;
+    /* color: #fff; */
+    font-size: 0.85em;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.subpages .nav.sub a:hover {
+    color: #c5c6c7;
 }
 
 @media (min-width: 16em) {
@@ -368,7 +382,8 @@ main>.content {
         bottom: 0;
         overflow-x: hidden;
         overflow-y: scroll;
-        padding-top: 20px;
+        padding-top: 35px;
+        padding-left: 25px
     }
     .nav.sub ul {
         /* margin-top: 1em; */
