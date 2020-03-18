@@ -86,6 +86,15 @@ var metalsmith = Metalsmith(__dirname)
             reverse: true,
             refer: false
         },
+        frontpage: {
+            pattern: 'index.*',
+            sortBy: 'priority',
+            reverse: true,
+            refer: false,
+            metadata: {
+                layout: './../src/layouts/frontpage.hbs' // default is <root>/layouts
+            }
+        },
         docs: {
             pattern: 'docs/**/*',
             sortBy: 'priority',
@@ -138,6 +147,7 @@ var metalsmith = Metalsmith(__dirname)
     //   //engineOptions:  {},
     //   pattern: `partials.hbs/**`
     // }))
+    // define default (add additional rules in collections plugin )
     .use(layouts({
         //engineOptions:  {},
         pattern: `**/index.*`,
