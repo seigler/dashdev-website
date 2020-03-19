@@ -195,6 +195,14 @@ main {
     padding-top: 10px;
 }
 
+.frontpage {
+    background-color: #111833;
+}
+
+.frontpage p {
+    color: red;
+}
+
 article {
     /* for page and article template */
     /* Distance left, right 1em */
