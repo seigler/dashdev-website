@@ -11,15 +11,10 @@
 
 	{{> header }}
 
-	{{!-- removed since there is no navsub (sidebar) in page layout --}}
-	{{!-- <main{{#if navsub}} class="subpages"{{/if}}> --}}
+	<div class="frontpage">
+
 	<main>
 
-		<div class="frontpage">
-
-			{{!-- {{> navsub }} --}}
-
-			<article>
 
 				{{#if title}}
 				<h1>{{ title }}</h1>
@@ -27,13 +22,10 @@
 
 				{{{ contents }}}
 
-			</article>
-
-		</div>
 
 	</main>
 
-	 {{!-- {{> footer template='page' }} --}}
+	</div>
 
 </body>
 

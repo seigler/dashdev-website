@@ -1,28 +1,15 @@
 ---
 title:
-description: A static HTML-only website generated using Metalsmith.io.
+description: Frontpage 
 priority: 1.0
 ---
+[![dashbox]({{ root }}images/dashbox-front.png)]({{ root }}docs/)
+[![dashbox]({{ root }}images/explorer-front.png)]({{ root }}docs/)
+[![dashbox]({{ root }}images/dpreact-front.png)]({{ root }}docs/)
 
-<span style="color:red"> *some emphasized markdown text*</span>
+<!-- [![dashbox]({{ root }}images/tinker-v1.png)](http://dash.org/) -->
+<!-- [![dashbox]({{ root }}images/myArt1.png)](http://dash.org/) -->
 
-<font color='blue'>test blue color font</font>
 
-<span style="background-color: #FFFF00">Marked text</span>
-
-[![Node.js]({{ root }}images/nodejs.png)](http://dash.org/)
-
-ffThis is a static website generated using the Node.js-powered **[Metalsmith](http://metalsmith.io)** and various published and custom plugins.
-
-This is a demonstration rather than a recommended way to build a static site. Your requirements will be different. Please use any part of the code as you wish.
-
-## Where could you use Metalsmith?
-Metalsmith could be used to create:
-
-* a fast static website with minimal server-side requirements
-* technical documentation
-* an eBook
-* application prototypes
-* build tools or project scaffolding
-
-[Get started&hellip;]({{ root }}docs/)
+<!-- [Get started&hellip;]({{ root }}docs/) -->
+<!-- <span style="color:red"> [Get started&hellip;]({{ root }}docs/) </span> -->

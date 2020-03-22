@@ -181,7 +181,6 @@ p.articleinfo {
 main {
     /* for page and article template */
     clear: both;
-    background-color: #fff;
     background-color: #f7f2ea;
     overflow: auto;
     min-height: 100%;
@@ -195,12 +194,23 @@ main {
     padding-top: 10px;
 }
 
-.frontpage {
+.frontpage>main {
     background-color: #111833;
 }
 
 .frontpage p {
-    color: red;
+    /* color: red; */
+    margin-bottom: 0;
+}
+
+.frontpage>main img {
+    float: left;
+    width: auto;
+    height: auto;
+    width: 33.333%;
+    margin-top: 15em;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 article {
