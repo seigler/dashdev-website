@@ -1,6 +1,8 @@
 ---
-title: tutorials
+title: Tutorials
 priority: 0.7
 ---
 
-This section provides an overview of core code and concepts.
+# Dash Wallet Chrome Extension
+
+WIP
