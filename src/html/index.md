@@ -4,7 +4,7 @@ description: Frontpage
 priority: 1.0
 ---
 <!-- TODO: data-contract-3d image should be placed above dashbox image (and scaled and fine positioned) -->
-[![dashbox]({{ root }}images/front/data_contract_3d.png)]({{ root }}docs/)
+[![dashbox]({{ root }}images/front/data-contract-3d.png)]({{ root }}docs/)
 
 ## Tools, Examples and Inspiration for Data Contracts
 
