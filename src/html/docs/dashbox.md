@@ -1,5 +1,6 @@
 ---
 title: dashbox
+description: Simple development framework for Dash Platform
 priority: 0.8
 ---
 

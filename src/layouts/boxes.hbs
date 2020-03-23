@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	{{> meta }}
+</head>
+
+<body>
+
+	{{> header }}
+
+	{{!-- <main{{#if navsub}} class="subpages" {{/if}}> --}}
+		<main>
+			
+		<div class="content">
+
+			{{!-- {{> navsub }} --}}
+			
+			<article>
+
+				<h1>{{ title }}</h1>
+
+				{{#if isPage}}
+				{{else}}
+
+				<p class="articleinfo">Published {{ dateFormat }}, {{ wordCount }} words, {{ readingTime }}-minute read</p>
+
+				{{/if}}
+
+				{{{ contents }}}
+
+				{{#if isPage}}
+
+				{{> pagelist }}
+
+				{{else}}
+				
+
+				{{/if}}
+
+			</article>
+
+			{{> footer template='article' }}
+
+		</div>
+
+		</main>
+
+</body>
+
+</html>

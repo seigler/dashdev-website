@@ -101,17 +101,17 @@ var metalsmith = Metalsmith(__dirname)
             reverse: true,
             refer: true,
             metadata: {
-                layout: './../src/layouts/article.hbs' // default is <root>/layouts
+                layout: './../src/layouts/docs.hbs' // default is <root>/layouts
             }
         },
-        article: {
-            pattern: 'article/**/*',
+        blog: {
+            pattern: 'blog/**/*',
             sortBy: 'date',
             reverse: true,
             refer: true,
             limit: 50,
             metadata: {
-                layout: './../src/layouts/article.hbs'
+                layout: './../src/layouts/blog.hbs'
             }
         },
         tutorials: {
@@ -120,6 +120,9 @@ var metalsmith = Metalsmith(__dirname)
             reverse: true,
             refer: true,
             limit: 50,
+            metadata: {
+                layout: './../src/layouts/tutorials.hbs'
+            }
         },
         boxes: {
             pattern: 'boxes/**/*',
@@ -127,13 +130,16 @@ var metalsmith = Metalsmith(__dirname)
             reverse: true,
             refer: true,
             limit: 50,
+            metadata: {
+                layout: './../src/layouts/boxes.hbs'
+            }
         }
     }))
     .use(markdownPrecompiler({ // convert {{> navmain}} in header.html
         engine: "handlebars",
         pattern: /\.md$/, // regex; no idea why .md works, check discoverPartials above
         partialsPath: './../partials',
-        partials: ['navmain', 'navsub', 'footer', 'header', 'meta', 'pagelist']
+        partials: ['navmain', 'navsub', 'footer', 'header', 'meta', 'pagelist', 'pagelist-docs']
     }))
     .use(markdown()) // convert markdown
     .use(permalinks({ // generate permalinks
@@ -173,8 +179,8 @@ metalsmith
         hostname: siteMeta.domain + (siteMeta.rootpath || ''),
         omitIndex: true // replace any paths ending in index.html with ''. Useful when you're using metalsmith-permalinks.
     }))
-    .use(rssfeed({ // generate RSS feed for articles
-        collection: 'article',
+    .use(rssfeed({ // generate RSS feed for articles (update: now blog)
+        collection: 'blog',
         site_url: siteMeta.domain + (siteMeta.rootpath || ''),
         title: siteMeta.name,
         description: siteMeta.desc
