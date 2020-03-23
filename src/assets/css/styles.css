@@ -198,17 +198,18 @@ main {
     background-color: #111833;
 }
 
-.frontpage p {
-    /* color: red; */
-    margin-bottom: 0;
+.frontpage p,
+.frontpage h2 {
+    color: white;
+    /* margin-bottom: 0; */
 }
 
 .frontpage>main img {
     float: left;
-    width: auto;
+    /* width: auto; */
     height: auto;
     width: 33.333%;
-    margin-top: 15em;
+    /* margin-top: 15em; */
     margin-left: 0;
     margin-bottom: 0;
 }
