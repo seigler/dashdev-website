@@ -1,7 +1,7 @@
 ---
 title: dashbox
 description: Simple development framework for Dash Platform
-image: images/docs/dashbox-docs-orange.png
+image: images/docs/dashbox-docs-white-single.png
 priority: 0.8
 ---
 

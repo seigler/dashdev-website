@@ -136,6 +136,7 @@ a:active {
     flex-wrap: wrap;
     margin: 0;
     line-height: 1.3;
+    text-align: center;
 }
 
 .pagelist li {
@@ -152,12 +153,19 @@ a:active {
     overflow: hidden;
     /* color for links in pagelist type page eg "Installation" (1 from 3) */
     color: #111833;
+    background-color: #ffff;
+    transition: box-shadow .3s;
+    transition: transform .3s;
+    border-radius: 5px;
 }
 
 .pagelist a:hover,
 .pagelist a:focus {
     /* background-color: #5a14dd; */
-    border-color: rgb(238, 9, 150);
+    /* border-color: rgb(238, 9, 150); */
+    box-shadow: 0 0 21px rgba(33, 33, 33, .2);
+    text-decoration: none;
+    transform: scale(1.03);
 }
 
 .pagelist h2,
@@ -167,6 +175,11 @@ a:active {
 
 .pagelist p {
     color: #111833;
+}
+
+.pagelist img {
+    width: 100%;
+    float: none;
 }
 
 p.articleinfo {
