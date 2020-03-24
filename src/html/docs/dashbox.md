@@ -41,14 +41,16 @@ For a custom and more advanced Template / Example / Tutorial run following comma
 
 ```
 $ dashbox load <source-box>
-
+```
 eg.
 
+```
 $ dashbox load dashjs-html-js-example
 $ dashbox load chrome-extension
 $ dashbox load chrome-extension-example
 $ dashbox load chrome-extension-wallet-tutorial (WIP)
 ``` 
+
 View all available boxes on https://github.com/dashdev-box
 
 ## Create - Your own box

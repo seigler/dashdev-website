@@ -86,11 +86,12 @@ img {
 
 pre {
     /* font-size: 1.05em; */
-    padding: 0.2em 0.4em;
+    padding: 1.08em 0;
+    padding-left: 1.0em;
     margin: 1em 0 1.5em 1.5em;
     background-color: #111833;
     /* makes code-block border round */
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: auto;
 }
 
@@ -109,9 +110,9 @@ pre code {
     padding: 0;
     color: #eff5ef;
     background-color: #111833;
-    padding-left: 8px;
-    line-height: 2.9;
-    font-size: 0.84em;
+    /* padding-left: 8px; */
+    line-height: 1.5;
+    font-size: 0.88em;
     font-weight: normal;
 }
 
