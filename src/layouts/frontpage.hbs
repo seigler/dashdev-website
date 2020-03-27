@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 	{{> meta }}
-
 </head>
-
 <body>
-
 	{{> header }}
-
 	<div class="frontpage">
-
-	<main>
-
-
-				{{#if title}}
-				<h1>{{ title }}</h1>
-				{{/if}}
-
-				{{{ contents }}}
-
-
-	</main>
-
+		<main>
+			<div class="hero">
+				<div class="hero-row">
+					<img class="hero-left-screen" src="{{root}}images/front/data-contract-3d.png" />
+					<div class="hero-title">
+						<h2>Tools, Examples and Inspiration for Data Contracts</h2>
+						<div class="hero-subtitle">Dashdev-Suite Dapp Framework. Making developers life easier.</div>
+					</div>
+					{{!-- <img src="" alt="" class="hero-right-screen"> --}}
+				</div>
+				<div class="hero-row">
+					<a href="{{ root }}docs/">
+						<img class="hero-3d-text" src="{{ root }}images/front/dashbox-front-orange.png" alt="dashbox">
+					</a>
+					<a href="{{ root }}docs/">
+						<img class="hero-3d-text" src="{{ root }}images/front/blockman-front-red.png" alt="blockman">
+					</a>
+					<a href="{{ root }}docs/">
+						<img class="hero-3d-text" src="{{ root }}images/front/reactvue-front-yellow.png" alt="reactvue">
+					</a>
+				</div>
+			</div>
+			{{!-- <section class="theme-orange">
+				<h2>Dashbox</h2>
+				<p>text about dashbox</p>
+			</section>
+			<section class="theme-magenta">
+				<h2>Blockman</h2>
+				<p>text about blockman</p>
+			</section>
+			<section class="theme-yellow">
+				<h2>Dashbox</h2>
+				<p>text about reactvue</p>
+			</section> --}}
+		</main>
 	</div>
-
 </body>
-
 </html>
